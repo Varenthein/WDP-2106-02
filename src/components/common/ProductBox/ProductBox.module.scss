@@ -9,7 +9,7 @@
     position: relative;
     padding: 80% 10px 0 10px;
     background: {
-      color: #f4f5f7;
+      color: #ffffff;
       size: contain;
       position: center;
       repeat: no-repeat;
@@ -28,9 +28,16 @@
       padding: 30px 15px 5px 15px;
     }
 
+    .image {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+
     .buttons {
       display: flex;
       justify-content: space-between;
+      position: absolute;
     }
   }
 
