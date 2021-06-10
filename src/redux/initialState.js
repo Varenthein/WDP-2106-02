@@ -15,6 +15,8 @@ const initialState = {
       stars: 2,
       promo: 'sale',
       newFurniture: true,
+      favorite: false,
+      compare: true,
       image:
         'https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
     },
@@ -26,6 +28,8 @@ const initialState = {
       stars: 2,
       promo: 'sale',
       newFurniture: true,
+      favorite: true,
+      compare: false,
       image:
         'https://images.pexels.com/photos/279746/pexels-photo-279746.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
     },
@@ -48,6 +52,8 @@ const initialState = {
       stars: 2,
       promo: 'sale',
       newFurniture: true,
+      favorite: true,
+      compare: true,
       image:
         'https://images.pexels.com/photos/6782567/pexels-photo-6782567.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
     },
@@ -81,6 +87,8 @@ const initialState = {
       stars: 2,
       promo: 'sale',
       newFurniture: true,
+      favorite: true,
+      compare: true,
       image:
         'https://images.pexels.com/photos/6782468/pexels-photo-6782468.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
     },
