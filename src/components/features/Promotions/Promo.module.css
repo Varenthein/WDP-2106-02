@@ -1,0 +1,45 @@
+.root {
+  padding: 5rem 0;
+}
+
+.root .bigLeft {
+  position: relative;
+  height: 400px;
+}
+
+.root .bigLeft .overlay {
+  position: absolute;
+  background-color: #a39797;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 30%;
+}
+
+.root .bigLeft .opacityText {
+  position: absolute;
+  font-size: 30px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 70%;
+  left: 30%;
+}
+
+.root .bigLeft .opacityText p {
+  margin-bottom: 5px;
+}
+
+.root .smallRightUp {
+  height: 200px;
+}
+
+.root .smallRightDown {
+  height: 200px;
+}
+
+.root .image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
