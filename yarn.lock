@@ -4596,6 +4596,16 @@
   "resolved" "https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz"
   "version" "1.0.0"
 
+"fsevents@~2.1.1":
+  "integrity" "sha512-R4wDiBwZ0KzpgOWetKDug1FZcYhqYnUYKtfZYt4mD5SBz76q0KR4Q9o7GIPamsVPGmW3EYPPJ0dOOjvx32ldZA=="
+  "resolved" "https://registry.npmjs.org/fsevents/-/fsevents-2.1.2.tgz"
+  "version" "2.1.2"
+
+"fsevents@2.0.7":
+  "integrity" "sha512-a7YT0SV3RB+DjYcppwVDLtn13UQnmg0SWZS7ezZD0UjnLwXmy8Zm21GMVGLaFGimIqcvyMQaOJBrop8MyOp1kQ=="
+  "resolved" "https://registry.npmjs.org/fsevents/-/fsevents-2.0.7.tgz"
+  "version" "2.0.7"
+
 "fstream@^1.0.0", "fstream@^1.0.12":
   "integrity" "sha512-WvJ193OHa0GHPEL+AycEJgxvBEwyfRkN1vhjca23OaPVMCaLCXTd5qAu82AjTcgP1UJmytkOKb63Ypde7raDIg=="
   "resolved" "https://registry.npmjs.org/fstream/-/fstream-1.0.12.tgz"
@@ -4811,9 +4821,9 @@
     "minimatch" "~3.0.2"
 
 "graceful-fs@^4.1.11", "graceful-fs@^4.1.15", "graceful-fs@^4.1.2", "graceful-fs@^4.1.6", "graceful-fs@^4.2.2":
-  "integrity" "sha512-nTnJ528pbqxYanhpDYsi4Rd8MAeaBA67+RZ10CM1m3bTAVFEDcd5AuA4a6W5YkGZ1iNXHzZz8T6TBKLeBuNriQ=="
-  "resolved" "https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.6.tgz"
-  "version" "4.2.6"
+  "integrity" "sha512-IItsdsea19BoLC7ELy13q1iJFNmd7ofZH5+X/pJr90/nRoPEX0DJo1dHDbgtYWOhJhcCgMDTOw84RZ72q6lB+Q=="
+  "resolved" "https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.2.tgz"
+  "version" "4.2.2"
 
 "growly@^1.3.0":
   "integrity" "sha1-8QdIy+dq+WS3yWyTxrzCivEgwIE="
@@ -4854,7 +4864,7 @@
   "resolved" "https://registry.npmjs.org/har-schema/-/har-schema-2.0.0.tgz"
   "version" "2.0.0"
 
-"har-validator@~5.1.3":
+"har-validator@~5.1.0":
   "integrity" "sha512-sNvOCzEQNr/qrvJgc3UG/kD4QtlHycrzwS+6mfTrrSq97BvaYcPZZI1ZSqGSPR73Cxn4LKTD4PttRwfU7jWq5g=="
   "resolved" "https://registry.npmjs.org/har-validator/-/har-validator-5.1.3.tgz"
   "version" "5.1.3"
@@ -8780,7 +8790,7 @@
   "resolved" "https://registry.npmjs.org/pseudomap/-/pseudomap-1.0.2.tgz"
   "version" "1.0.2"
 
-"psl@^1.1.28":
+"psl@^1.1.24", "psl@^1.1.28":
   "integrity" "sha512-HZzqCGPecFLyoRj5HLfuDSKYTJkAfB5thKBIkRHtGjWwY7p1dAyveIbXIq4tO0KYfDF2tHqPUgY9SDnGm00uFw=="
   "resolved" "https://registry.npmjs.org/psl/-/psl-1.4.0.tgz"
   "version" "1.4.0"
@@ -8823,6 +8833,11 @@
     "pump" "^2.0.0"
 
 "punycode@^1.2.4":
+  "integrity" "sha1-wNWmOycYgArY4esPpSachN1BhF4="
+  "resolved" "https://registry.npmjs.org/punycode/-/punycode-1.4.1.tgz"
+  "version" "1.4.1"
+
+"punycode@^1.4.1":
   "integrity" "sha1-wNWmOycYgArY4esPpSachN1BhF4="
   "resolved" "https://registry.npmjs.org/punycode/-/punycode-1.4.1.tgz"
   "version" "1.4.1"
@@ -9395,9 +9410,9 @@
     "tough-cookie" "^2.3.3"
 
 "request@^2.34", "request@^2.87.0", "request@^2.88.0":
-  "integrity" "sha512-MsvtOrfG9ZcrOwAW+Qi+F6HbD0CWXEh9ou77uOb7FM2WPhwT7smM833PzanhJLsgXjN89Ir6V2PczXNnMpwKhw=="
-  "resolved" "https://registry.npmjs.org/request/-/request-2.88.2.tgz"
-  "version" "2.88.2"
+  "integrity" "sha512-NAqBSrijGLZdM0WZNsInLJpkJokL72XYjUpnB0iwsRgxh7dB6COrHnTBNwN0E+lHDAJzu7kLAkDeY08z2/A0hg=="
+  "resolved" "https://registry.npmjs.org/request/-/request-2.88.0.tgz"
+  "version" "2.88.0"
   dependencies:
     "aws-sign2" "~0.7.0"
     "aws4" "^1.8.0"
@@ -9406,7 +9421,7 @@
     "extend" "~3.0.2"
     "forever-agent" "~0.6.1"
     "form-data" "~2.3.2"
-    "har-validator" "~5.1.3"
+    "har-validator" "~5.1.0"
     "http-signature" "~1.2.0"
     "is-typedarray" "~1.0.0"
     "isstream" "~0.1.2"
@@ -9416,7 +9431,7 @@
     "performance-now" "^2.1.0"
     "qs" "~6.5.2"
     "safe-buffer" "^5.1.2"
-    "tough-cookie" "~2.5.0"
+    "tough-cookie" "~2.4.3"
     "tunnel-agent" "^0.6.0"
     "uuid" "^3.3.2"
 
@@ -10646,13 +10661,21 @@
   "resolved" "https://registry.npmjs.org/toidentifier/-/toidentifier-1.0.0.tgz"
   "version" "1.0.0"
 
-"tough-cookie@^2.3.3", "tough-cookie@^2.3.4", "tough-cookie@^2.5.0", "tough-cookie@~2.5.0":
+"tough-cookie@^2.3.3", "tough-cookie@^2.3.4", "tough-cookie@^2.5.0":
   "integrity" "sha512-nlLsUzgm1kfLXSXfRZMc1KLAugd4hqJHDTvc2hDIwS3mZAfMEuMbc03SujMF+GEcpaX/qboeycw6iO8JwVv2+g=="
   "resolved" "https://registry.npmjs.org/tough-cookie/-/tough-cookie-2.5.0.tgz"
   "version" "2.5.0"
   dependencies:
     "psl" "^1.1.28"
     "punycode" "^2.1.1"
+
+"tough-cookie@~2.4.3":
+  "integrity" "sha512-Q5srk/4vDM54WJsJio3XNn6K2sCG+CQ8G5Wz6bZhRZoAe/+TxjWB/GlFAnYEbkYVlON9FMk/fE3h2RLpPXo4lQ=="
+  "resolved" "https://registry.npmjs.org/tough-cookie/-/tough-cookie-2.4.3.tgz"
+  "version" "2.4.3"
+  dependencies:
+    "psl" "^1.1.24"
+    "punycode" "^1.4.1"
 
 "tr46@^1.0.1":
   "integrity" "sha1-qLE/1r/SSJUZZ0zN5VujaTtwbQk="
