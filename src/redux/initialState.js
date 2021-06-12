@@ -224,6 +224,17 @@ const initialState = {
       newFurniture: true,
     },
   ],
+  brands: [
+    { id: '1', logo: '1' },
+    { id: '2', logo: '2' },
+    { id: '3', logo: '3' },
+    { id: '4', logo: '4' },
+    { id: '5', logo: '5' },
+    { id: '6', logo: '6' },
+    // {id: '7', logo: '7'},
+    // {id: '8', logo: '8'},
+    // {id: '9', logo: '9'},
+  ],
   cart: {
     products: [],
   },
