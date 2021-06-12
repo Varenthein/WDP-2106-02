@@ -89,8 +89,20 @@
   &:hover .priceButton{
     background-color: $primary;
   }
+
   &:hover .buttons{
     opacity: 1;
   };
   
+  .price {
+    display: flex;
+    justify-content: center;
+
+    .oldprice {
+      text-decoration: line-through;
+      text-align: center;
+      position: relative;
+      padding: 5px 10px;
+    }
+  }
 }
