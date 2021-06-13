@@ -4,12 +4,13 @@
   background-color: #ffffff;
   border: 1px solid #e1e1e1;
   margin-bottom: 2rem;
-
+  object-fit: cover;
+  transition: 0.6s ease-in-out;
   .photo {
     position: relative;
     padding: 80% 10px 0 10px;
     background: {
-      color: #f4f5f7;
+      color: #ffffff;
       size: contain;
       position: center;
       repeat: no-repeat;
@@ -28,9 +29,17 @@
       padding: 30px 15px 5px 15px;
     }
 
+    .image {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+
     .buttons {
       display: flex;
       justify-content: space-between;
+      opacity: 0;
+      transition: 0.4s ease-in;
     }
   }
 
@@ -68,11 +77,32 @@
       transform: translateX(-50%);
     }
   }
-
+  .price div{
+    transition: 0.4s ease-in;
+  }
   .actions {
     padding: 15px 10px 10px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+  };
+  &:hover .priceButton{
+    background-color: $primary;
+  }
+
+  &:hover .buttons{
+    opacity: 1;
+  };
+  
+  .price {
+    display: flex;
+    justify-content: center;
+
+    .oldprice {
+      text-decoration: line-through;
+      text-align: center;
+      position: relative;
+      padding: 5px 10px;
+    }
   }
 }
