@@ -29,7 +29,7 @@ class Brands extends React.Component {
               {brandsProducts.map(item => (
                 <div key={item.id} className=''>
                   <div className={styles.logoBox}>
-                    <div className={styles.logo}>{item.logo}</div>
+                    <img src={item.logo} className={styles.logo} alt='logo' />
                   </div>
                 </div>
               ))}
