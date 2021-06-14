@@ -119,3 +119,20 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .leftBox {
+    display: none;
+  }
+  .contentContainer{
+    .rightBox {
+      height: 400px;
+        .imgBox {
+          .imgDescription {
+            top: 15%;
+          }
+        }
+    }
+  }
+  
+}

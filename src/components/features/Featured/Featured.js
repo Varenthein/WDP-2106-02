@@ -60,7 +60,7 @@ class Featured extends React.Component {
                 <div className={styles.imgDescription}>
                   <div className={styles.imgDescriptionTitle}>
                     indoor <span>furniture</span>
-                  </div>{' '}
+                  </div>
                   save up to 50% of all furniture
                   <div className={styles.imgButton}>shop now</div>
                 </div>
