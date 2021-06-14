@@ -227,6 +227,44 @@ const initialState = {
   cart: {
     products: [],
   },
+  promo_products: [
+    {
+      id: 'aenean-ru-bristique-1',
+      name: 'Aenean Ru Bristique 1',
+      category: 'bed',
+      oldPrice: 123,
+      price: 30,
+      stars: 2,
+      newFurniture: true,
+      src:
+        'https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      alt: 'sofa',
+    },
+    {
+      id: 'aenean-ru-bristique-2',
+      name: 'Aenean Ru Bristique 2',
+      category: 'bed',
+      oldPrice: 123,
+      price: 30,
+      stars: 2,
+      newFurniture: true,
+      src:
+        'https://images.pexels.com/photos/4505458/pexels-photo-4505458.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      alt: 'sofa',
+    },
+    {
+      id: 'aenean-ru-bristique-3',
+      name: 'Aenean Ru Bristique 3',
+      category: 'bed',
+      oldPrice: 123,
+      price: 30,
+      stars: 2,
+      newFurniture: true,
+      src:
+        'https://images.pexels.com/photos/4577654/pexels-photo-4577654.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      alt: 'sofa',
+    },
+  ],
 };
 
 export default initialState;
