@@ -1,5 +1,17 @@
 @import "../../../styles/settings.scss";
 
+@mixin tablet {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media (max-width: 575px) {
+    @content;
+  }
+}
+
 .root {
   background-color: $header-bg;
 
@@ -15,6 +27,10 @@
       color: rgb(216, 216, 216);
       font-weight: 500;
 
+      @include small {
+        font-size: 14px;
+      }
+
       .icon {
         font-size: 32px;
         color: $primary;
@@ -22,6 +38,16 @@
         margin-top: -3px;
         margin-right: 0.8rem;
       }
+    }
+
+    @include tablet {
+      margin-top: -7%;
+    }
+  }
+
+  .logo {
+    @include tablet {
+      margin-top: 5%;
     }
   }
 
@@ -68,6 +94,10 @@
           background-color: lighten($primary, 10%);
         }
       }
+    }
+
+    @include tablet {
+      margin-top: -5%;
     }
   }
 }
