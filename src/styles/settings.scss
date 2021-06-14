@@ -11,3 +11,23 @@ $primary: #d58e32;
 $text-color: #2a2a2a;
 
 $form-border-color: #292929;
+
+// TRANSITIONS //
+
+$transition-button-bg: all 250ms ease;
+$transition-button-text: all 250ms ease;
+
+// ANIMATIONS //
+
+.hover_anim_bg {
+  color: #ffffff !important;
+  background-color: $primary;
+  text-decoration: none;
+  transition: $transition-button-bg;
+}
+
+.hover_anim_text {
+  color: $primary;
+  border: 1px solid $primary;
+  transition: $transition-button-text;
+}

@@ -40,7 +40,7 @@ class Brands extends React.Component {
               {brands.slice(activePage * 6, (activePage + 1) * 6).map(item => (
                 <div key={item.id} className=''>
                   <div className={styles.logoBox}>
-                    <div className={styles.logo}>{item.logo}</div>
+                    <img src={item.logo} className={styles.logo} alt='logo' />
                   </div>
                 </div>
               ))}
