@@ -47,9 +47,17 @@
       left: 0;
       display: block;
       box-shadow: 4px 4px 4px rgba(0,0,0,0.15);
+      z-index: 999;
     }
     ul li {
       position: relative;
+      padding: 8px 0;
+      
+      a {
+        width: 100%;
+        padding: 5px 2px;
+      }
+      
     }
     ul li ul {
       display: none;
