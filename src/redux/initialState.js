@@ -1391,9 +1391,6 @@ const initialState = {
       logo:
         'https://images.pexels.com/photos/4389667/pexels-photo-4389667.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
     },
-    // {id: '7', logo: '7'},
-    // {id: '8', logo: '8'},
-    // {id: '9', logo: '9'},
   ],
   cart: {
     products: [],
