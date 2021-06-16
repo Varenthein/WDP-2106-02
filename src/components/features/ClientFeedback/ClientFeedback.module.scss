@@ -1,11 +1,5 @@
 @import "../../../styles/settings.scss";
 
-@mixin tablet {
-  @media (max-width: 767px) {
-    @content;
-  }
-}
-
 .root {
   .panelBar {
     margin-bottom: 30px;
@@ -36,24 +30,13 @@
         border-bottom: 4px solid $primary;
       }
     }
-
+    
     .menu {
       text-align: center;
-
       ul {
         margin: 0;
         padding: 0;
         list-style: none;
-        @include tablet {
-          :first-child {
-            margin-left: 0;
-          }
-        }
-        @include tablet {
-          :last-child {
-            margin-right: 0;
-          }
-        }
         li {
           display: inline-block;
           margin: 0 0.5rem;
@@ -65,9 +48,6 @@
             text-decoration: none;
             font-size: 18px;
             display: block;
-            @include tablet {
-              padding-top: 12px;
-            }
 
             &.active,
             &:hover {
@@ -118,4 +98,42 @@
       }
     }
   }
+}
+.comma {
+    h4 {
+        text-align: center;
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+    .feedback_content_box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .feedbackText {
+        width: 80%;
+        text-align: center;
+    }
+    .userContainer {
+        display: flex;
+        flex-direction: row;
+        .userImg {
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+        }
+        .userContainerData {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            div:first-of-type {
+                font-weight: 500;
+            }
+            div {
+                width: 150px;
+            }
+        }
+    }
 }
