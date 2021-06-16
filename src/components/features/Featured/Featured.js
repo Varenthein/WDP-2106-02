@@ -47,6 +47,7 @@ class Featured extends React.Component {
                   <ul>{dots}</ul>
                 </div>
               </div>
+
               <div className={styles.imgContainer}>
                 {promo_products.slice(activePage, activePage + 1).map(item => (
                   <div key={item.id}>
@@ -60,7 +61,7 @@ class Featured extends React.Component {
                 <div className={styles.imgDescription}>
                   <div className={styles.imgDescriptionTitle}>
                     indoor <span>furniture</span>
-                  </div>{' '}
+                  </div>
                   save up to 50% of all furniture
                   <div className={styles.imgButton}>shop now</div>
                 </div>
@@ -79,7 +80,7 @@ class Featured extends React.Component {
 
 Featured.propTypes = {
   children: PropTypes.node,
-  promo_products: PropTypes.arrayOf(
+  products: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string,
       name: PropTypes.string,
@@ -88,6 +89,15 @@ Featured.propTypes = {
       price: PropTypes.number,
       stars: PropTypes.number,
       newFurniture: PropTypes.bool,
+    })
+  ),
+  promo_products: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      oldPrice: PropTypes.number,
+      src: PropTypes.string,
+      alt: PropTypes.string,
+      product: PropTypes.any,
     })
   ),
 };
