@@ -15,6 +15,7 @@
     color: $btn-main-text !important;
     background-color: $btn-main-bcd-hover;
     text-decoration: none;
+    @extend .hover_anim_bg;
   }
 }
 
@@ -37,5 +38,13 @@
   &:not(.noHover):hover {
     background-color: $btn-outline-hover-bcg;
     color: $btn-outline-bcd-hover;
+    @extend .hover_anim_text;
   }
 }
+
+.compare {
+  margin-right: 4px;
+}
+
+// .favorite {
+// }

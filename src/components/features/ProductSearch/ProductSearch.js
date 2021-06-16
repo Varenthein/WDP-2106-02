@@ -11,7 +11,9 @@ const ProductSearch = () => (
     <div className={styles.category}>
       <FontAwesomeIcon className={styles.icon} icon={faListUl} />
       <select name='' id=''>
-        <option value=''>Select a category</option>
+        <option value='' className={styles.options}>
+          Select a category
+        </option>
       </select>
       <FontAwesomeIcon className={styles.icon} icon={faCaretDown} />
     </div>

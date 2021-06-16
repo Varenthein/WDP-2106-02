@@ -17,10 +17,12 @@ $snowWhite: #f4f5f7;
 $charcoal: #292929;
 $whippedCream: #e2e2e2;
 $stone: #434343;
+$black: #0000;
 
 /******** LIST OF COLOURS BY COMPONENT ********/
 //other files are usable
 
+// HEAD //
 /* Button Component */
 $btn-main-text: $white;
 $btn-main-bcd: $almostBlack;
@@ -128,3 +130,25 @@ $topbar-bcg: $stone;
 $topbar-link: $white;
 
 $topbar-link-hover: $orange;
+
+$form-border-color: $charcoal;
+
+// TRANSITIONS //
+
+$transition-button-bg: all 250ms ease;
+$transition-button-text: all 250ms ease;
+
+// ANIMATIONS //
+
+.hover_anim_bg {
+  color: $white !important;
+  background-color: $orange;
+  text-decoration: none;
+  transition: $transition-button-bg;
+}
+
+.hover_anim_text {
+  color: $orange;
+  border: 1px solid $orange;
+  transition: $transition-button-text;
+}
