@@ -37,6 +37,11 @@
         vertical-align: middle;
         margin-top: -3px;
         margin-right: 0.8rem;
+
+        @include small {
+          transform: scale(0.7);
+          margin-right: 0;
+        }
       }
     }
 
@@ -47,7 +52,14 @@
 
   .logo {
     @include tablet {
-      margin-top: 5%;
+      margin-top: 3%;
+    }
+    @include small {
+      margin-top: 0;
+      img {
+        max-width: 90%;
+        max-height: 90%;
+      }
     }
   }
 
@@ -56,6 +68,7 @@
       display: inline-block;
       position: relative;
       color: #ffffff;
+      padding-top: 1%;
 
       .cartIcon {
         background-color: $primary;
@@ -98,6 +111,10 @@
 
     @include tablet {
       margin-top: -5%;
+    }
+    @include small {
+      margin-top: 0;
+      align-self: center;
     }
   }
 }
