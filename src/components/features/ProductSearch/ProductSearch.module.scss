@@ -11,7 +11,7 @@
     display: flex;
     align-items: center;
     position: relative;
-
+    padding: 5px 35px;
     .icon:first-child {
       color: $productsearch-icon;
       position: absolute;
@@ -24,6 +24,32 @@
       right: 10px;
       z-index: 0;
     }
+    a {
+      text-decoration: none;
+    }
+    li {
+      list-style: none;
+    }
+    ul {
+      display: none;
+      position: absolute;
+      transition: 0.5s ease-in-out;
+      background-color: white;
+      width: 100%;
+    }
+    
+    
+    
+  }
+  .category:hover {
+    ul {
+      top: 42px;
+      left: 0;
+      display: block;
+      box-shadow: 4px 4px 4px rgba(0,0,0,0.15);
+      z-index: 999;
+    }
+    ul li {
 
     select {
       -webkit-appearance: none;
@@ -31,16 +57,25 @@
       background-color: $productsearch-select-bcg;
       padding: 5px 30px 5px 35px;
       position: relative;
-      z-index: 1;
-      outline: none;
-      font-size: 13.33px;
-      cursor: pointer;
-      option:hover,
-      option:focus {
-        background: none;
+      
+      a {
+        width: 100%;
+        padding: 5px 2px;
       }
+      
+    }
+    ul li ul {
+      display: none;
+      
+    }
+    ul li:hover ul {
+      display: block;
+      position: absolute;
+      left: 170px;
+      top: 0;
     }
   }
+  
   .searchField {
     display: flex;
     align-items: center;
