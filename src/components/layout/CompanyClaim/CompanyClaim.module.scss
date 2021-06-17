@@ -13,7 +13,7 @@
 }
 
 .root {
-  background-color: $header-bg;
+  background-color: $companyclaim-bcg;
 
   :global(.container) > :global(.row) {
     height: 145px;
@@ -24,7 +24,7 @@
       margin: 0;
       font-size: 17px;
       line-height: 42px;
-      color: rgb(216, 216, 216);
+      color: $companyclaim-phonenumber-text;
       font-weight: 500;
 
       @include small {
@@ -33,7 +33,7 @@
 
       .icon {
         font-size: 32px;
-        color: $primary;
+        color: $companyclaim-phonenumber-icon;
         vertical-align: middle;
         margin-top: -3px;
         margin-right: 0.8rem;
@@ -55,10 +55,10 @@
     .cartBox {
       display: inline-block;
       position: relative;
-      color: #ffffff;
+      color: $companyclaim-cart-text;
 
       .cartIcon {
-        background-color: $primary;
+        background-color: $companyclaim-cart-bcg;
         width: 55px;
         height: 50px;
         border-radius: 3px;
@@ -76,11 +76,11 @@
         width: 50px;
         height: 27px;
         border-radius: 14px;
-        background-color: $header-bg;
+        background-color: $companyclaim-cartCounter-bcg;
         display: flex;
         align-items: center;
         font-size: 14px;
-        color: rgb(224, 227, 237);
+        color:$companyclaim-cartCounter-text;
         position: absolute;
         top: 50%;
         right: -10px;
@@ -91,7 +91,7 @@
 
       &:hover {
         .cartIcon {
-          background-color: lighten($primary, 10%);
+          background-color: lighten($companyclaim-cartCounter-text-hover-bcg, 10%);
         }
       }
     }
