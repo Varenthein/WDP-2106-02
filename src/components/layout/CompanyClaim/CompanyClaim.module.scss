@@ -62,7 +62,7 @@
       }
     }
   }
-
+  
   .cart {
     .cartBox {
       display: inline-block;
@@ -111,10 +111,12 @@
 
     @include tablet {
       margin-top: -5%;
+      padding-right: 5%;
     }
     @include small {
       margin-top: 0;
       align-self: center;
+      padding-right: 11%;
     }
   }
 }
