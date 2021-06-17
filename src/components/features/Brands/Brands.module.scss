@@ -4,14 +4,14 @@
   .panelBar {
     margin-bottom: 30px;
     position: relative;
-    border-top: 4px solid #e2e2e2;
-    border-bottom: 4px solid #e2e2e2;
+    border-top: 4px solid $whippedCream;
+    border-bottom: 4px solid $whippedCream;
 
     .heading {
       position: relative;
 
       h3 {
-        color: $primary;
+        color: $orange;
         text-transform: uppercase;
         font-size: 20px;
         line-height: 38px;
@@ -25,7 +25,7 @@
         bottom: -4px;
         left: 0;
         width: 45px;
-        border-bottom: 4px solid $primary;
+        border-bottom: 4px solid $orange;
       }
     }
 
@@ -55,7 +55,7 @@
                 bottom: -4px;
                 left: 0;
                 width: 100%;
-                border-bottom: 4px solid $primary;
+                border-bottom: 4px solid $orange;
               }
             }
           }
@@ -81,15 +81,15 @@
     width: 35px;
     height: 80%;
     cursor: pointer;
-    background-color: black;
-    color: white;
+    background-color: $black;
+    color: $white;
   }
   .arrow:last-child {
     left: calc(1110px - 35px);
   }
 }
 .logoBox {
-  border: 1px solid #e2e2e2;
+  border: 1px solid $whippedCream;
   margin: 10px;
   text-align: center;
 
