@@ -1360,6 +1360,38 @@ const initialState = {
         'https://images.pexels.com/photos/5778892/pexels-photo-5778892.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
     },
   ],
+  brands: [
+    {
+      id: '1',
+      logo:
+        'https://images.pexels.com/photos/430205/pexels-photo-430205.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    },
+    {
+      id: '2',
+      logo:
+        'https://images.pexels.com/photos/1337386/pexels-photo-1337386.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    },
+    {
+      id: '3',
+      logo:
+        'https://images.pexels.com/photos/1162361/pexels-photo-1162361.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    },
+    {
+      id: '4',
+      logo:
+        'https://images.pexels.com/photos/104372/pexels-photo-104372.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    },
+    {
+      id: '5',
+      logo:
+        'https://images.pexels.com/photos/2362155/pexels-photo-2362155.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    },
+    {
+      id: '6',
+      logo:
+        'https://images.pexels.com/photos/4389667/pexels-photo-4389667.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+    },
+  ],
   cart: {
     products: [],
   },

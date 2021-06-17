@@ -1,19 +1,19 @@
 @import "../../../styles/settings.scss";
 
 .root {
-  border: 1px solid $form-border-color;
+  border: 1px solid $productsearch-border;
   display: inline-flex;
   height: 45px;
-  color: $text-color;
+  color: $productsearch-text;
 
   .category {
-    border-right: 1px solid $form-border-color;
+    border-right: 1px solid $productsearch-category-border;
     display: flex;
     align-items: center;
     position: relative;
     padding: 5px 35px;
     .icon:first-child {
-      color: $primary;
+      color: $productsearch-icon;
       position: absolute;
       left: 10px;
       z-index: 0;
@@ -50,8 +50,13 @@
       z-index: 999;
     }
     ul li {
+
+    select {
+      -webkit-appearance: none;
+      border: 0;
+      background-color: $productsearch-select-bcg;
+      padding: 5px 30px 5px 35px;
       position: relative;
-      padding: 8px 0;
       
       a {
         width: 100%;
@@ -83,13 +88,13 @@
       outline: none;
 
       &::placeholder {
-        color: $text-color;
+        color: $productsearch-placeholder;
       }
     }
 
     button {
       border: 0;
-      background-color: transparent;
+      background-color: $button-bcg;
       outline: none;
     }
   }
