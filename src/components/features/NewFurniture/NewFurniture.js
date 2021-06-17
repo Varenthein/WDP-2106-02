@@ -4,25 +4,13 @@ import PropTypes from 'prop-types';
 import styles from './NewFurniture.module.scss';
 import ProductBox from '../../common/ProductBox/ProductBox';
 
-import Swipeable from '../../common/Swipeable/Swipeable';
+import Swipe from '../../common/Swipe/Swipe';
 
 class NewFurniture extends React.Component {
   state = {
     activePage: 0,
     activeCategory: 'bed',
   };
-
-  handleLeftAction(pagesCount) {
-    if (this.state.activePage < pagesCount - 1) {
-      this.setState({ activePage: this.state.activePage + 1 });
-    }
-  }
-
-  handleRightAction() {
-    if (this.state.activePage > 0) {
-      this.setState({ activePage: this.state.activePage - 1 });
-    }
-  }
 
   handlePageChange(newPage) {
     this.setState({ activePage: newPage });
@@ -54,9 +42,13 @@ class NewFurniture extends React.Component {
     }
 
     return (
-      <Swipeable
-        leftAction={() => this.handleLeftAction(pagesCount)}
-        rightAction={() => this.handleRightAction()}
+      <Swipe
+        rightAction={() => this.handlePageChange(activePage > 0 ? activePage - 1 : 0)}
+        leftAction={() =>
+          this.handlePageChange(
+            activePage + 1 < pagesCount ? activePage + 1 : activePage
+          )
+        }
       >
         <div className={styles.root}>
           <div className='container'>
@@ -70,10 +62,7 @@ class NewFurniture extends React.Component {
                     {categories.map(item => (
                       <li key={item.id}>
                         <a
-                          href='/#'
-                          className={
-                            item.id === activeCategory ? styles.active : undefined
-                          }
+                          className={item.id === activeCategory ? styles.active : ''}
                           onClick={() => this.handleCategoryChange(item.id)}
                         >
                           {item.name}
@@ -98,7 +87,7 @@ class NewFurniture extends React.Component {
             </div>
           </div>
         </div>
-      </Swipeable>
+      </Swipe>
     );
   }
 }
