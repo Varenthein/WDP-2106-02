@@ -12,6 +12,7 @@
     align-items: center;
     position: relative;
     padding: 5px 35px;
+
     .icon:first-child {
       color: $productsearch-icon;
       position: absolute;
@@ -24,12 +25,15 @@
       right: 10px;
       z-index: 0;
     }
+
     a {
       text-decoration: none;
     }
+
     li {
       list-style: none;
     }
+
     ul {
       display: none;
       position: absolute;
@@ -38,9 +42,8 @@
       width: 100%;
     }
     
-    
-    
   }
+
   .category:hover {
     ul {
       top: 42px;
@@ -51,23 +54,25 @@
     }
     ul li {
 
-    select {
-      -webkit-appearance: none;
-      border: 0;
-      background-color: $productsearch-select-bcg;
-      padding: 5px 30px 5px 35px;
-      position: relative;
+      select {
+        -webkit-appearance: none;
+        border: 0;
+        background-color: $productsearch-select-bcg;
+        padding: 5px 30px 5px 35px;
+        position: relative;
       
-      a {
-        width: 100%;
-        padding: 5px 2px;
+          a {
+            width: 100%;
+            padding: 5px 2px;
+          }
+      
       }
-      
     }
+    
     ul li ul {
-      display: none;
-      
+      display: none;   
     }
+    
     ul li:hover ul {
       display: block;
       position: absolute;
