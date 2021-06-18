@@ -1419,6 +1419,7 @@ const initialState = {
       alt: 'sofa',
     },
   ],
+
   feedback: [
     {
       id: '1',
