@@ -1,25 +1,19 @@
 @import "../../../styles/settings.scss";
 
-@mixin tablet {
-  @media (max-width: 767px) {
-    @content;
-  }
-}
-
 .root {
   .panelBar {
     margin-bottom: 30px;
     position: relative;
 
     :global(.row) > * {
-      border-bottom: 4px solid $newfurniture-panelbar-border;
+      border-bottom: 4px solid #e2e2e2;
     }
 
     .heading {
       position: relative;
 
       h3 {
-        color: $newfurniture-header-text;
+        color: $primary;
         text-transform: uppercase;
         font-size: 20px;
         line-height: 38px;
@@ -33,41 +27,27 @@
         bottom: -4px;
         left: 0;
         width: 45px;
-        border-bottom: 4px solid $newfurniture-heading-before;
+        border-bottom: 4px solid $primary;
       }
     }
-
+    
     .menu {
       text-align: center;
-
       ul {
         margin: 0;
         padding: 0;
         list-style: none;
-        @include tablet {
-          :first-child {
-            margin-left: 0;
-          }
-        }
-        @include tablet {
-          :last-child {
-            margin-right: 0;
-          }
-        }
         li {
           display: inline-block;
           margin: 0 0.5rem;
           font-weight: 600;
 
           a {
-            color: $newfurniture-menu-link;
+            color: rgb(42, 42, 42);
             position: relative;
             text-decoration: none;
             font-size: 18px;
             display: block;
-            @include tablet {
-              padding-top: 12px;
-            }
 
             &.active,
             &:hover {
@@ -77,7 +57,7 @@
                 bottom: -4px;
                 left: 0;
                 width: 100%;
-                border-bottom: 4px solid $newfurniture-menu-link-active-hover-border;
+                border-bottom: 4px solid $primary;
               }
             }
           }
@@ -94,7 +74,7 @@
         margin: 0;
         padding: 0 0 0 1rem;
         list-style: none;
-        background-color: $newfurniture-dots-list;
+        background-color: #ffffff;
         transform: translateY(15px);
 
         li {
@@ -106,16 +86,54 @@
             width: 13px;
             height: 13px;
             border-radius: 6px;
-            background-color: $newfurniture-link-bcg;
+            background-color: #e1e1e1;
             font-size: 0;
 
             &.active,
             &:hover {
-              background-color: $newfurniture-link-active-hover;
+              background-color: $primary;
             }
           }
         }
       }
     }
   }
+}
+.comma {
+    h4 {
+        text-align: center;
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+    .feedback_content_box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .feedbackText {
+        width: 80%;
+        text-align: center;
+    }
+    .userContainer {
+        display: flex;
+        flex-direction: row;
+        .userImg {
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+        }
+        .userContainerData {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            div:first-of-type {
+                font-weight: 500;
+            }
+            div {
+                width: 150px;
+            }
+        }
+    }
 }

@@ -1,13 +1,154 @@
 $base-padding: 24px;
 
-$header-topbar-bg: #434343;
-$header-bg: #363636;
+/******** VARIABLES ********/
 
-$footer-claim-bg: #2a2a2a;
-$footer-bg: #363636;
+//DO NOT USE THOSE VARIABLES IN SCSS FILES//
 
-$primary: #d58e32;
+$lightGray: #b2b2b2;
+$white: #ffffff;
+$orange: #d58e32;
+$almostBlack: #2a2a2a;
+$ivory: #b6b6b6;
+$transparent: transparent;
+$darkGrey: #363636;
+$green: #008000;
+$meadow: #e1e1e1;
+$snowWhite: #f4f5f7;
+$charcoal: #292929;
+$whippedCream: #e2e2e2;
+$stone: #434343;
+$black: #0000;
 
-$text-color: #2a2a2a;
+/******** LIST OF COLOURS BY COMPONENT ********/
+//other files are usable
 
-$form-border-color: #292929;
+// HEAD //
+/* Button Component */
+$btn-main-text: $white;
+$btn-main-bcd: $almostBlack;
+$btn-main-bcd-hover: $orange;
+
+$btn-outline-border: $almostBlack;
+$btn-outline-text: $almostBlack;
+$btn-outline-bcd: $almostBlack;
+$btn-outline-hover-bcg: $almostBlack;
+$btn-outline-bcd-hover: $white;
+
+/* FeatureBox Component */
+$featurebox-border: $ivory;
+$featurebox-text: $almostBlack;
+$featurebox-icon-border: $lightGray;
+$featurebox-icon-bcg: $white;
+
+$featurebox-icon-after-border: $ivory;
+
+$content-text: $almostBlack;
+$content-active-text: $white;
+$content-active-bcg: $orange;
+$content-active-border: $orange;
+
+$active-content: $orange;
+
+/* ProductBox Component */
+$productbox-bcg: $white;
+$productbox-bcg-border: $meadow;
+
+$productbox-photo-bcg: $snowWhite;
+
+$productbox-sale-bcg: $charcoal;
+$productbox-sale-text: $white;
+
+$productbox-content-text: $orange;
+$productbox-content-stars: $almostBlack;
+
+$productbox-line-border: $almostBlack;
+$productbox-line-border-before: $orange;
+
+/* ProductSearch Component */
+$productsearch-border: $charcoal;
+$productsearch-text: $almostBlack;
+$productsearch-category-border: $charcoal;
+
+$productsearch-icon: $orange;
+
+$productsearch-select-bcg: $transparent;
+
+$productsearch-placeholder: $almostBlack;
+
+$button-bcg: $transparent;
+
+/* NewFurniture Component */
+$newfurniture-panelbar-border: $whippedCream;
+$newfurniture-header-text: $orange;
+$newfurniture-heading-before: $orange;
+
+$newfurniture-menu-link: $almostBlack;
+$newfurniture-menu-link-active-hover-border: $orange;
+
+$newfurniture-dots-list: $white;
+$newfurniture-link-bcg: $meadow;
+$newfurniture-link-active-hover: $orange;
+
+/* CompanyClaim Component */
+$companyclaim-bcg: $darkGrey;
+
+$companyclaim-phonenumber-text: $ivory;
+$companyclaim-phonenumber-icon: $orange;
+
+$companyclaim-cart-text: $white;
+$companyclaim-cart-bcg: $orange;
+
+$companyclaim-cartCounter-bcg: $darkGrey;
+$companyclaim-cartCounter-text: $ivory;
+$companyclaim-cartCounter-text-hover-bcg: $orange;
+
+/* Footer Component */
+$footer-bg: $darkGrey;
+$footer-menu-text: $white;
+$footer-menu-link: $lightGray;
+$footer-menu-link-hover: $white;
+
+$footer-bottomBar-bcg: $almostBlack;
+$footer-copyright-text: $lightGray;
+
+$footer-sm-links: $lightGray;
+$footer-sm-links-hover: $orange;
+
+/* MenuBar Component */
+$menubar-bcg: $white;
+$menubar-link-border: $white;
+
+$menubar-link-text: $almostBlack;
+$menubar-link-hover-active-bcg: $orange;
+$menubar-hover-active-text: $white;
+$menubar-hover-active-border: $orange;
+
+$menubar-link-active-border: $almostBlack;
+
+/* TopBar Component */
+$topbar-bcg: $stone;
+$topbar-link: $white;
+
+$topbar-link-hover: $orange;
+
+$form-border-color: $charcoal;
+
+// TRANSITIONS //
+
+$transition-button-bg: all 250ms ease;
+$transition-button-text: all 250ms ease;
+
+// ANIMATIONS //
+
+.hover_anim_bg {
+  color: $white !important;
+  background-color: $orange;
+  text-decoration: none;
+  transition: $transition-button-bg;
+}
+
+.hover_anim_text {
+  color: $orange;
+  border: 1px solid $orange;
+  transition: $transition-button-text;
+}
