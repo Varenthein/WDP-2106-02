@@ -118,4 +118,13 @@
       }
     }
   }
+
+  .fadeout {
+    opacity: 0;
+    transition: 0.6s;
+  }
+
+  .fadein {
+    transition: 0.6s;
+  }
 }
