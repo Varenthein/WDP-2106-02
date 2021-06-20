@@ -4,14 +4,17 @@
 // }
 
 .main {
-  background-color: #2a2a2a;
-  color: #ffffff;
+  background-color: $btn-main-bcd;
+  color: $btn-main-text;
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
   padding: 10px 30px;
 
   &:not(.noHover):hover {
+    color: $btn-main-text !important;
+    background-color: $btn-main-bcd-hover;
+    text-decoration: none;
     @extend .hover_anim_bg;
   }
 }
@@ -27,12 +30,14 @@
 .outline {
   display: inline-block;
   padding: 5px 10px;
-  border: 1px solid #2a2a2a;
-  color: #2a2a2a;
+  border: 1px solid $btn-outline-border;
+  color: $btn-outline-text;
   font-size: 13px;
   line-height: 22px;
 
   &:not(.noHover):hover {
+    background-color: $btn-outline-hover-bcg;
+    color: $btn-outline-bcd-hover;
     @extend .hover_anim_text;
   }
 }
