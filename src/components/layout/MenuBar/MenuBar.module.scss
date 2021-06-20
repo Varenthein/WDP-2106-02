@@ -7,13 +7,13 @@
   :global(.container) > :global(.row) {
     height: 84px;
 
-    @include large() {
+    @include large {
       height: 140px;
     }
     @include tablet {
       height: 100px;
     }
-    @include small() {
+    @include small {
       height: 84px;
     }
   }
@@ -84,11 +84,22 @@
       }
     }
 
-    @include small() {
-      right: 2%;
+    @include small {
+      right: 5%;
 
       ul {
-        z-index: 999;
+        right: 8%;
+      }
+    }
+
+    @include extra-small {
+      right: 9%;
+
+      ul {
+        right: 12%;
+        a {
+          min-width: 160px;
+        }
       }
     }
   }

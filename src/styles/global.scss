@@ -29,3 +29,9 @@ body {
     @content;
   }
 }
+
+@mixin extra-small {
+  @media (max-width: 380px) {
+    @content;
+  }
+}
