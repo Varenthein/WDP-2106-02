@@ -94,3 +94,14 @@
 .root .panelBar .dots ul li a.active, .root .panelBar .dots ul li a:hover {
   background-color: #d58e32;
 }
+
+.root .fadeout {
+  opacity: 0;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.root .fadein {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
