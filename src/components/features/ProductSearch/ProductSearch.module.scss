@@ -35,32 +35,50 @@
       outline: none;
       font-size: 13.33px;
       cursor: pointer;
+
       option:hover,
       option:focus {
         background: none;
+        
+        a {
+          width: 100%;
+          padding: 5px 2px;
+        }
+        
+      }
+      ul li ul {
+        display: none;
+        
+      }
+      ul li:hover ul {
+        display: block;
+        position: absolute;
+        left: 170px;
+        top: 0;
       }
     }
-  }
-  .searchField {
-    display: flex;
-    align-items: center;
-    position: relative;
+  
+    .searchField {
+      display: flex;
+      align-items: center;
+      position: relative;
 
-    input {
-      border: 0;
-      padding-left: 10px;
-      font-size: 14px;
-      outline: none;
+      input {
+        border: 0;
+        padding-left: 10px;
+        font-size: 14px;
+        outline: none;
 
-      &::placeholder {
-        color: $text-color;
+        &::placeholder {
+          color: $text-color;
+        }
       }
-    }
 
-    button {
-      border: 0;
-      background-color: transparent;
-      outline: none;
+      button {
+        border: 0;
+        background-color: transparent;
+        outline: none;
+      }
     }
   }
 }
