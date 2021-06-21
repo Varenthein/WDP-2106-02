@@ -1,16 +1,14 @@
 import React from 'react';
 import styles from './StickyBar.module.scss';
 import Button from '../../common/Button/Button';
+// import PropTypes from 'prop-types';
 
-const stickyBar = () => (
+const StickyBar = () => (
   <div className={styles.container}>
     <div className='container'>
       <div className='row'>
         <div className='col-10'>
           <div className='row'>
-            <div className={styles.image}></div>
-            <div className={styles.image}></div>
-            <div className={styles.image}></div>
             <div className={styles.image}></div>
           </div>
         </div>
@@ -24,4 +22,6 @@ const stickyBar = () => (
   </div>
 );
 
-export default stickyBar;
+StickyBar.propTypes = {};
+
+export default StickyBar;
