@@ -73,7 +73,7 @@ ProductBox.propTypes = {
   oldPrice: PropTypes.number,
   promo: PropTypes.string,
   stars: PropTypes.number,
-  image: PropTypes.string.isRequired,
+  image: PropTypes.string,
   compare: PropTypes.bool,
   favorite: PropTypes.bool,
 };
