@@ -1395,6 +1395,31 @@ const initialState = {
   cart: {
     products: [],
   },
+
+  promo_products: [
+    {
+      id: 'aenean-ru-bristique-1',
+      oldPrice: 123,
+      src:
+        'https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      alt: 'sofa',
+    },
+    {
+      id: 'aenean-ru-bristique-2',
+      oldPrice: 123,
+      src:
+        'https://images.pexels.com/photos/4505458/pexels-photo-4505458.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      alt: 'sofa',
+    },
+    {
+      id: 'aenean-ru-bristique-3',
+      oldPrice: 123,
+      src:
+        'https://images.pexels.com/photos/4577654/pexels-photo-4577654.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      alt: 'sofa',
+    },
+  ],
+
   feedback: [
     {
       id: '1',
