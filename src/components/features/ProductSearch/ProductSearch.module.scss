@@ -86,21 +86,21 @@
     align-items: center;
     position: relative;
 
-    input {
-      border: 0;
-      padding-left: 10px;
-      font-size: 14px;
-      outline: none;
+      input {
+        border: 0;
+        padding-left: 10px;
+        font-size: 14px;
+        outline: none;
 
       &::placeholder {
         color: $productsearch-placeholder;
       }
-    }
 
     button {
       border: 0;
       background-color: $button-bcg;
       outline: none;
+    }
     }
   }
 
