@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import styles from './NewFurniture.module.scss';
 import ProductBox from '../../common/ProductBox/ProductBox';
 
-import Swipe from '../../common/Swipe/Swipe';
+import SwipeComponent from '../../common/Swipeable/SwipeComponent';
 
 class NewFurniture extends React.Component {
   state = {
@@ -42,13 +42,10 @@ class NewFurniture extends React.Component {
     }
 
     return (
-      <Swipe
-        rightAction={() => this.handlePageChange(activePage > 0 ? activePage - 1 : 0)}
-        leftAction={() =>
-          this.handlePageChange(
-            activePage + 1 < pagesCount ? activePage + 1 : activePage
-          )
-        }
+      <SwipeComponent
+        itemsCount={pagesCount}
+        activeItem={this.state.activePage}
+        swipeAction={this.handlePageChange.bind(this)}
       >
         <div className={styles.root}>
           <div className='container'>
@@ -87,7 +84,7 @@ class NewFurniture extends React.Component {
             </div>
           </div>
         </div>
-      </Swipe>
+      </SwipeComponent>
     );
   }
 }
