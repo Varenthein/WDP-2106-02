@@ -37,6 +37,11 @@
         vertical-align: middle;
         margin-top: -3px;
         margin-right: 0.8rem;
+
+        @include small {
+          transform: scale(0.7);
+          margin-right: 0;
+        }
       }
     }
 
@@ -47,15 +52,23 @@
 
   .logo {
     @include tablet {
-      margin-top: 5%;
+      margin-top: 3%;
+    }
+    @include small {
+      margin-top: 0;
+      img {
+        max-width: 90%;
+        max-height: 90%;
+      }
     }
   }
-
+  
   .cart {
     .cartBox {
       display: inline-block;
       position: relative;
       color: $companyclaim-cart-text;
+      padding-top: 1%;
 
       .cartIcon {
         background-color: $companyclaim-cart-bcg;
@@ -98,6 +111,12 @@
 
     @include tablet {
       margin-top: -5%;
+      padding-right: 5%;
+    }
+    @include small {
+      margin-top: 0;
+      align-self: center;
+      padding-right: 11%;
     }
   }
 }

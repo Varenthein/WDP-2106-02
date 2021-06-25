@@ -1,4 +1,4 @@
-@import "../../../styles/settings.scss";
+@import "../../../styles/global.scss";
 
 .root {
   box-shadow: 2px 3.464px 6px rgba(1, 2, 2, 0.2);
@@ -6,11 +6,28 @@
 
   :global(.container) > :global(.row) {
     height: 84px;
+
+    @include large {
+      height: 140px;
+    }
+    @include tablet {
+      height: 100px;
+    }
+    @include small {
+      height: 84px;
+    }
+  }
+
+  .searchWrapper {
+    @include tablet {
+      position: absolute;
+    }
   }
 
   .menu {
     display: flex;
     align-self: stretch;
+    position: relative;
 
     ul {
       margin: 0;
@@ -45,6 +62,44 @@
 
       &.active {
         border-color: $menubar-link-active-border;
+      }
+    }
+
+    @include tablet {
+      position: absolute;
+      right: 10%;
+      align-self: center;
+      
+      ul {
+        background-color: #ffffff;
+        position: absolute;
+        right: 0;
+        transform: translateY(5%);
+        z-index: 999;
+        border: 1px solid black;
+        
+        a {
+          min-width: 180px;
+        }
+      }
+    }
+
+    @include small {
+      right: 5%;
+
+      ul {
+        right: 8%;
+      }
+    }
+
+    @include extra-small {
+      right: 9%;
+
+      ul {
+        right: 12%;
+        a {
+          min-width: 160px;
+        }
       }
     }
   }

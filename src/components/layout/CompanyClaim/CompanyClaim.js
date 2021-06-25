@@ -19,7 +19,7 @@ const CompanyClaim = () => (
           </p>
         </div>
         <div
-          className={`col-6 col-md text-left text-md-center order-1 order-md-2 ${styles.logo}`}
+          className={`col-6 col-md text-md-center order-1 order-md-2 ${styles.logo}`}
         >
           <a href='#'>
             <img src='/images/logo.png' alt='Bazar' />

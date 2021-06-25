@@ -1395,6 +1395,31 @@ const initialState = {
   cart: {
     products: [],
   },
+
+  promo_products: [
+    {
+      id: 'aenean-ru-bristique-1',
+      oldPrice: 123,
+      src:
+        'https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      alt: 'sofa',
+    },
+    {
+      id: 'aenean-ru-bristique-2',
+      oldPrice: 123,
+      src:
+        'https://images.pexels.com/photos/4505458/pexels-photo-4505458.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      alt: 'sofa',
+    },
+    {
+      id: 'aenean-ru-bristique-3',
+      oldPrice: 123,
+      src:
+        'https://images.pexels.com/photos/4577654/pexels-photo-4577654.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      alt: 'sofa',
+    },
+  ],
+
   feedback: [
     {
       id: '1',
@@ -1419,6 +1444,68 @@ const initialState = {
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam maximus massa luctus, interdum dui ac, consequat lorem. Quisque id quam rhoncus, venenatis urna ac, malesuada urna.',
       img_src:
         'https://images.pexels.com/photos/3760263/pexels-photo-3760263.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+    },
+  ],
+  gallery: [
+    {
+      id: '1',
+      name: 'Aenean Ru Bristique 1',
+      image:
+        'https://images.pexels.com/photos/276534/pexels-photo-276534.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
+      oldPrice: 160,
+      price: 120,
+      stars: 2,
+      active: true,
+    },
+    {
+      id: '2',
+      name: 'Aenean Ru Bristique 2',
+      image:
+        'https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
+      oldPrice: 130,
+      price: 110,
+      stars: 2,
+      active: false,
+    },
+    {
+      id: '3',
+      name: 'Aenean Ru Bristique 3',
+      image:
+        'https://images.pexels.com/photos/2547555/pexels-photo-2547555.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
+      oldPrice: 150,
+      price: 120,
+      stars: 2,
+      active: false,
+    },
+    {
+      id: '4',
+      name: 'Aenean Ru Bristique 4',
+      image:
+        'https://images.pexels.com/photos/6707628/pexels-photo-6707628.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
+      oldPrice: 190,
+      price: 150,
+      stars: 2,
+      active: false,
+    },
+    {
+      id: '5',
+      name: 'Aenean Ru Bristique 5',
+      image:
+        'https://images.pexels.com/photos/60342/pexels-photo-60342.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
+      oldPrice: 160,
+      price: 130,
+      stars: 2,
+      active: false,
+    },
+    {
+      id: '6',
+      name: 'Aenean Ru Bristique 6',
+      image:
+        'https://images.pexels.com/photos/6588591/pexels-photo-6588591.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
+      oldPrice: 140,
+      price: 110,
+      stars: 2,
+      active: false,
     },
   ],
 };
