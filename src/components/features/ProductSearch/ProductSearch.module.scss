@@ -1,10 +1,11 @@
-@import "../../../styles/settings.scss";
+@import "../../../styles/global.scss";
 
 .root {
   border: 1px solid $productsearch-border;
   display: inline-flex;
   height: 45px;
   color: $productsearch-text;
+  font-size: 14px;
 
   .category {
     border-right: 1px solid $productsearch-category-border;
@@ -41,7 +42,6 @@
       background-color: white;
       width: 100%;
     }
-    
   }
 
   .category:hover {
@@ -101,6 +101,41 @@
       background-color: $button-bcg;
       outline: none;
     }
+    }
+  }
+
+  @include small {
+    display: flex;
+    font-size: 12px;
+
+    .category {
+      width: 50%;
+      padding: auto;
+    }
+
+    input {
+      width: 100%;
+
+      &::placeholder {
+        font-size: 12px;
+      }
+    }
+  }
+  @include extra-small {
+    font-size: 10px;
+
+    .category {
+      width: 75%;
+      padding-left: 12%;
+      padding-right: 2%;
+    }
+
+    input {
+      width: 100%;
+
+      &::placeholder {
+        font-size: 10px;
+      }
     }
   }
 }
