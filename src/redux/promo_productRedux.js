@@ -1,5 +1,11 @@
 /* selectors */
-export const getAll = ({ promo_products }) => promo_products;
+
+// eslint-disable-next-line no-unused-expressions
+export const getAll = ({ promo_products, products }) =>
+  promo_products.map(prom => ({
+    ...prom,
+    product: Object.values(products.find(prod => prod.id === prom.id)),
+  }));
 export const getCount = ({ promo_products }) => promo_products.length;
 
 /* reducer */

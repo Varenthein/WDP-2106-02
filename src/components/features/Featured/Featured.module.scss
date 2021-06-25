@@ -10,7 +10,7 @@
       position: relative;
       text-transform: uppercase;
       padding: 10px;
-      background-color: $header-bg;
+      background-color: $darkGrey;
       font-weight: 600;
       color: #f1f1f1;
       .dots {
@@ -39,7 +39,7 @@
       
               &.active,
               &:hover {
-                background-color: $primary;
+                background-color: $orange;
               }
             }
           }
@@ -109,13 +109,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: $header-bg;
+        background-color: $almostBlack;
         color: white;
         font-weight: 700;
       }
       .buttonNext:hover,
       .buttonPrev:hover {
-        background-color: $primary;
+        background-color: $orange;
       }
     }
   }

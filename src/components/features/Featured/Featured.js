@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 
 import styles from './Featured.module.scss';
 import FeaturedProductBox from '../../common/FeaturedProductBox/FeaturedProductBox';
-
 class Featured extends React.Component {
   state = {
     activePage: 0,
@@ -11,10 +10,6 @@ class Featured extends React.Component {
 
   handlePageChange(newPage) {
     this.setState({ activePage: newPage });
-  }
-
-  handleCategoryChange(newCategory) {
-    this.setState({ activeCategory: newCategory });
   }
 
   render() {
@@ -47,12 +42,15 @@ class Featured extends React.Component {
                   <ul>{dots}</ul>
                 </div>
               </div>
+
               <div className={styles.imgContainer}>
+                
                 {promo_products.slice(activePage, activePage + 1).map(item => (
                   <div key={item.id}>
                     <FeaturedProductBox {...item} />
                   </div>
                 ))}
+                
               </div>
             </div>
             <div className={styles.rightBox}>
@@ -69,7 +67,9 @@ class Featured extends React.Component {
                 <div className={styles.buttonPrev}>&#60;</div>
                 <div className={styles.buttonNext}>&#62;</div>
               </div>
+              
             </div>
+            
           </div>
         </div>
       </div>
@@ -79,7 +79,7 @@ class Featured extends React.Component {
 
 Featured.propTypes = {
   children: PropTypes.node,
-  promo_products: PropTypes.arrayOf(
+  products: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string,
       name: PropTypes.string,
@@ -88,6 +88,15 @@ Featured.propTypes = {
       price: PropTypes.number,
       stars: PropTypes.number,
       newFurniture: PropTypes.bool,
+    })
+  ),
+  promo_products: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      oldPrice: PropTypes.number,
+      src: PropTypes.string,
+      alt: PropTypes.string,
+      product: PropTypes.any,
     })
   ),
 };
