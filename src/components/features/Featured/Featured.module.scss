@@ -138,8 +138,11 @@
     .rightBox {
       height: 400px;
         .imgBox {
+          img {
+            height: 350px;
+          }
           .imgDescription {
-            top: 15%;
+            margin-top: 100px;
           }
         }
     }
