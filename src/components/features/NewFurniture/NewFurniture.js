@@ -55,7 +55,6 @@ class NewFurniture extends React.Component {
     }
 
     return (
-<<<<<<< HEAD
       <SwipeComponent
         itemsCount={pagesCount}
         activeItem={this.state.activePage}
@@ -96,7 +95,6 @@ class NewFurniture extends React.Component {
                   </div>
                 ))}
             </div>
-=======
       <div className={styles.root}>
         <div className='container'>
           <div className={styles.panelBar}>
@@ -131,7 +129,6 @@ class NewFurniture extends React.Component {
                 <ProductBox {...item} />
               </div>
             ))}
->>>>>>> 48463def827babd023ac2d050c412da84402336d
           </div>
         </div>
       </SwipeComponent>
