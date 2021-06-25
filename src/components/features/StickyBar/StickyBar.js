@@ -3,14 +3,15 @@ import styles from './StickyBar.module.scss';
 import Button from '../../common/Button/Button';
 import PropTypes from 'prop-types';
 
-const StickyBar = ({ getComparedProducts }) => (
+const StickyBar = ({ compareProducts }) => (
   <div className={styles.container}>
     <div className='container'>
       <div className='row'>
         <div className='col-10'>
           <div className='row'>
-            <div className={styles.image}></div>
-            {getComparedProducts}
+            {/* {compareProducts.map(product => (
+              <img key={product} src={compareProducts} className={styles.image} alt='compareProduct'></img>
+            ))} */}
           </div>
         </div>
         <div className='col-2'>
@@ -24,7 +25,7 @@ const StickyBar = ({ getComparedProducts }) => (
 );
 
 StickyBar.propTypes = {
-  getComparedProducts: PropTypes.object,
+  compareProducts: PropTypes.array,
 };
 
 export default StickyBar;

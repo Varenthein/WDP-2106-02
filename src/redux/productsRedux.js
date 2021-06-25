@@ -23,7 +23,9 @@ export default function reducer(statePart = [], action = {}) {
   switch (action.type) {
     case CHANGE_COMPARE: {
       return statePart.map(product =>
-        product.id === action.payload ? { ...product, compare: true } : !product.compare
+        product.id === action.payload
+          ? { ...product, compare: !product.compare }
+          : product
       );
     }
     default:
