@@ -1403,6 +1403,7 @@ const initialState = {
       src:
         'https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
       alt: 'sofa',
+      description: 'save up to 50% of all furniture',
     },
     {
       id: 'aenean-ru-bristique-2',
@@ -1410,6 +1411,7 @@ const initialState = {
       src:
         'https://images.pexels.com/photos/4505458/pexels-photo-4505458.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
       alt: 'sofa',
+      description: 'save up to 10%',
     },
     {
       id: 'aenean-ru-bristique-3',
@@ -1417,6 +1419,7 @@ const initialState = {
       src:
         'https://images.pexels.com/photos/4577654/pexels-photo-4577654.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
       alt: 'sofa',
+      description: 'buy one get one free',
     },
   ],
 
