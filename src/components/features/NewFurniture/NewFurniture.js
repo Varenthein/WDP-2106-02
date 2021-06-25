@@ -64,15 +64,15 @@ class NewFurniture extends React.Component {
           <div className='container'>
             <div className={styles.panelBar}>
               <div className='row no-gutters align-items-end'>
-                <div className={'col-auto ' + styles.heading}>
+                <div className={'col-12 col-md-auto ' + styles.heading}>
                   <h3>New furniture</h3>
                 </div>
-                <div className={'col ' + styles.menu}>
+                <div className={'col-auto col-md ' + styles.menu}>
                   <ul>
                     {categories.map(item => (
                       <li key={item.id}>
                         <a
-                          className={item.id === activeCategory ? styles.active : ''}
+                          className={item.id === activeCategory && styles.active}
                           onClick={() => this.handleCategoryChange(item.id)}
                         >
                           {item.name}
@@ -86,55 +86,26 @@ class NewFurniture extends React.Component {
                 </div>
               </div>
             </div>
-            <div className='row'>
+            <div
+              className={'row' + (isFading ? ' ' + styles.fadeout : ' ' + styles.fadein)}
+            >
               {categoryProducts
                 .slice(activePage * 8, (activePage + 1) * 8)
                 .map(item => (
-                  <div key={item.id} className='col-3'>
-                    <ProductBox {...item} />
+                  <div key={item.id} className='col-6 col-md-4 col-lg-3'>
+                    <ProductBox
+                      {...item}
+                    />
                   </div>
                 ))}
             </div>
-      <div className={styles.root}>
-        <div className='container'>
-          <div className={styles.panelBar}>
-            <div className='row no-gutters align-items-end'>
-              <div className={'col-12 col-md-auto ' + styles.heading}>
-                <h3>New furniture</h3>
-              </div>
-              <div className={'col-auto col-md ' + styles.menu}>
-                <ul>
-                  {categories.map(item => (
-                    <li key={item.id}>
-                      <a
-                        className={item.id === activeCategory && styles.active}
-                        onClick={() => this.handleCategoryChange(item.id)}
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className={'col-auto ' + styles.dots}>
-                <ul>{dots}</ul>
-              </div>
-            </div>
-          </div>
-          <div
-            className={'row' + (isFading ? ' ' + styles.fadeout : ' ' + styles.fadein)}
-          >
-            {categoryProducts.slice(activePage * 8, (activePage + 1) * 8).map(item => (
-              <div key={item.id} className='col-6 col-md-4 col-lg-3'>
-                <ProductBox {...item} />
-              </div>
-            ))}
           </div>
         </div>
       </SwipeComponent>
     );
   }
 }
+
 
 NewFurniture.propTypes = {
   children: PropTypes.node,
