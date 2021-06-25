@@ -1,16 +1,33 @@
-@import "../../../styles/settings.scss";
+@import "../../../styles/global.scss";
 
 .root {
   box-shadow: 2px 3.464px 6px rgba(1, 2, 2, 0.2);
-  background-color: #ffffff;
+  background-color: $menubar-bcg;
 
   :global(.container) > :global(.row) {
     height: 84px;
+
+    @include large {
+      height: 140px;
+    }
+    @include tablet {
+      height: 100px;
+    }
+    @include small {
+      height: 84px;
+    }
+  }
+
+  .searchWrapper {
+    @include tablet {
+      position: absolute;
+    }
   }
 
   .menu {
     display: flex;
     align-self: stretch;
+    position: relative;
 
     ul {
       margin: 0;
@@ -25,26 +42,64 @@
     }
 
     a {
-      color: $text-color;
+      color: $menubar-link-text;
       text-transform: uppercase;
       font-size: 12px;
       padding: 1rem;
       text-decoration: none;
       display: flex;
       align-items: center;
-      border-top: 4px solid #ffffff;
+      border-top: 4px solid $menubar-link-border;
       font-weight: 500;
       letter-spacing: 1px;
 
       &:hover,
       &.active {
-        background-color: $primary;
-        color: #ffffff;
-        border-color: $primary;
+        background-color: $menubar-link-hover-active-bcg;
+        color: $menubar-hover-active-text;
+        border-color: $menubar-hover-active-border;
       }
 
       &.active {
-        border-color: $text-color;
+        border-color: $menubar-link-active-border;
+      }
+    }
+
+    @include tablet {
+      position: absolute;
+      right: 10%;
+      align-self: center;
+      
+      ul {
+        background-color: #ffffff;
+        position: absolute;
+        right: 0;
+        transform: translateY(5%);
+        z-index: 999;
+        border: 1px solid black;
+        
+        a {
+          min-width: 180px;
+        }
+      }
+    }
+
+    @include small {
+      right: 5%;
+
+      ul {
+        right: 8%;
+      }
+    }
+
+    @include extra-small {
+      right: 9%;
+
+      ul {
+        right: 12%;
+        a {
+          min-width: 160px;
+        }
       }
     }
   }
