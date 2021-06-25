@@ -19,9 +19,9 @@ class Promotions extends React.Component {
                 />
                 <div className={styles.overlay}></div>
                 <div className={styles.opacityText}>
-                  <p>{promotions[0].text}</p>
+                  <h2>{promotions[0].text}</h2>
                   <span>{promotions[0].text_bold}</span>
-                  <p className={styles.percents}>{promotions[0].text_percent}</p>
+                  <h3 className={styles.percents}>{promotions[0].text_percent}</h3>
                 </div>
               </div>
             </div>
@@ -34,10 +34,10 @@ class Promotions extends React.Component {
                       alt={promotions[1].alt}
                       src={promotions[1].image}
                     />
-                    <p>{promotions[1].text}</p>
-                    <p className={styles.text_2}>{promotions[1].text_2}</p>
+                    <h1>{promotions[1].text}</h1>
+                    <h2 className={styles.text_2}>{promotions[1].text_2}</h2>
                     <span>{promotions[1].text_bold}</span>
-                    <p className={styles.money}>{promotions[1].text_money}</p>
+                    <h3 className={styles.money}>{promotions[1].text_money}</h3>
                   </div>
                 </div>
                 <div className='col-12'>
@@ -47,8 +47,8 @@ class Promotions extends React.Component {
                       alt={promotions[2].alt}
                       src={promotions[2].image}
                     />
-                    <p>{promotions[2].text}</p>
-                    <p className={styles.text_2}>{promotions[2].text_2}</p>
+                    <h2>{promotions[2].text}</h2>
+                    <h3 className={styles.text_2}>{promotions[2].text_2}</h3>
                     <span>{promotions[2].text_content}</span>
                   </div>
                 </div>

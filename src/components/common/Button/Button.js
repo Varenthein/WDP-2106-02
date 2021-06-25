@@ -26,13 +26,8 @@ const Button = ({
     Comp = 'div';
   }
 
-  if (favorite) {
-    classes.push(styles.favorite);
-  }
-
-  if (compare) {
-    classes.push(styles.compare);
-  }
+  if (favorite) classes.push(styles[favorite]);
+  else classes.push(styles.compare);
 
   return (
     <Comp href='#' {...props} className={classes.join(' ')}>
