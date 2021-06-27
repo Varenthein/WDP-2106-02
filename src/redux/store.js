@@ -5,14 +5,16 @@ import cartReducer from './cartRedux';
 import categoriesReducer from './categoriesRedux';
 import productsReducer from './productsRedux';
 import promo_productReducer from './promo_productRedux';
-
+import galleryReducer from './galleryRedux';
 import brandsReducer from './brandsRedux';
+
 // define reducers
 const reducers = {
   cart: cartReducer,
   categories: categoriesReducer,
   products: productsReducer,
   promo_products: promo_productReducer,
+  gallery: galleryReducer,
   brands: brandsReducer,
 };
 
