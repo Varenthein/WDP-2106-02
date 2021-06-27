@@ -1,4 +1,5 @@
 const initialState = {
+  deviceType: '',
   categories: [
     { id: 'bed', name: 'Bed' },
     { id: 'chair', name: 'Chair' },
@@ -13,7 +14,7 @@ const initialState = {
       category: 'bed',
       price: 30,
       oldPrice: '40',
-      stars: 2,
+      stars: 3,
       promo: 'sale',
       newFurniture: true,
       favorite: false,
@@ -40,8 +41,7 @@ const initialState = {
       name: 'Aenean Ru Bristique 3',
       category: 'bed',
       price: 30,
-      oldPrice: '',
-      stars: 2,
+      stars: 1,
       promo: 'sale',
       newFurniture: true,
       image:
