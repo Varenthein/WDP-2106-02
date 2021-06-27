@@ -1,7 +1,13 @@
 @import "../../../styles/settings.scss";
 
+@mixin small {
+  @media (max-width: 575px) {
+    @content;
+  }
+}
+
 .root {
-  background-color: $header-topbar-bg;
+  background-color: $topbar-bcg;
 
   ul {
     list-style: none;
@@ -13,11 +19,11 @@
       line-height: 55px;
 
       a {
-        color: #ffffff;
+        color: $topbar-link;
         font-size: 13px;
 
         &:hover {
-          color: $primary;
+          color: $topbar-link-hover;
           text-decoration: none;
         }
       }
@@ -37,6 +43,12 @@
 
     .icon {
       margin-right: 5px;
+    }
+
+    @include small {
+      span {
+        display: none;
+      }
     }
   }
 }

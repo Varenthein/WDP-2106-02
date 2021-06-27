@@ -1,7 +1,19 @@
 @import "../../../styles/settings.scss";
 
+@mixin tablet {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media (max-width: 575px) {
+    @content;
+  }
+}
+
 .root {
-  background-color: $header-bg;
+  background-color: $companyclaim-bcg;
 
   :global(.container) > :global(.row) {
     height: 145px;
@@ -12,27 +24,54 @@
       margin: 0;
       font-size: 17px;
       line-height: 42px;
-      color: rgb(216, 216, 216);
+      color: $companyclaim-phonenumber-text;
       font-weight: 500;
+
+      @include small {
+        font-size: 14px;
+      }
 
       .icon {
         font-size: 32px;
-        color: $primary;
+        color: $companyclaim-phonenumber-icon;
         vertical-align: middle;
         margin-top: -3px;
         margin-right: 0.8rem;
+
+        @include small {
+          transform: scale(0.7);
+          margin-right: 0;
+        }
       }
+    }
+
+    @include tablet {
+      margin-top: -7%;
     }
   }
 
+  .logo {
+    @include tablet {
+      margin-top: 3%;
+    }
+    @include small {
+      margin-top: 0;
+      img {
+        max-width: 90%;
+        max-height: 90%;
+      }
+    }
+  }
+  
   .cart {
     .cartBox {
       display: inline-block;
       position: relative;
-      color: #ffffff;
+      color: $companyclaim-cart-text;
+      padding-top: 1%;
 
       .cartIcon {
-        background-color: $primary;
+        background-color: $companyclaim-cart-bcg;
         width: 55px;
         height: 50px;
         border-radius: 3px;
@@ -47,26 +86,37 @@
       }
 
       .cartCounter {
-        width: 28px;
+        width: 50px;
         height: 27px;
         border-radius: 14px;
-        background-color: $header-bg;
+        background-color: $companyclaim-cartCounter-bcg;
         display: flex;
         align-items: center;
-        justify-content: center;
         font-size: 14px;
-        color: rgb(224, 227, 237);
+        color:$companyclaim-cartCounter-text;
         position: absolute;
         top: 50%;
-        right: 0;
+        right: -10px;
         transform: translate(50%, -50%);
+        justify-content: flex-start;
+        padding: 9px;
       }
 
       &:hover {
         .cartIcon {
-          background-color: lighten($primary, 10%);
+          background-color: lighten($companyclaim-cartCounter-text-hover-bcg, 10%);
         }
       }
+    }
+
+    @include tablet {
+      margin-top: -5%;
+      padding-right: 5%;
+    }
+    @include small {
+      margin-top: 0;
+      align-self: center;
+      padding-right: 11%;
     }
   }
 }
