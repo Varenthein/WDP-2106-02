@@ -5,3 +5,33 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+
+@mixin desktop {
+  @media (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media (max-width: 575px) {
+    @content;
+  }
+}
+
+@mixin extra-small {
+  @media (max-width: 380px) {
+    @content;
+  }
+}

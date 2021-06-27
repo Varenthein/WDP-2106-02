@@ -1,4 +1,5 @@
 const initialState = {
+  deviceType: '',
   categories: [
     { id: 'bed', name: 'Bed' },
     { id: 'chair', name: 'Chair' },
@@ -12,7 +13,7 @@ const initialState = {
       name: 'Aenean Ru Bristique 1',
       category: 'bed',
       price: 30,
-      stars: 2,
+      stars: 3,
       promo: 'sale',
       newFurniture: true,
       favorite: false,
@@ -25,7 +26,7 @@ const initialState = {
       name: 'Aenean Ru Bristique 2',
       category: 'bed',
       price: 30,
-      stars: 2,
+      stars: 4,
       promo: 'sale',
       newFurniture: true,
       favorite: true,
@@ -38,7 +39,7 @@ const initialState = {
       name: 'Aenean Ru Bristique 3',
       category: 'bed',
       price: 30,
-      stars: 2,
+      stars: 1,
       promo: 'sale',
       newFurniture: true,
       image:
@@ -49,7 +50,7 @@ const initialState = {
       name: 'Aenean Ru Bristique 4',
       category: 'bed',
       price: 30,
-      stars: 2,
+      stars: 5,
       promo: 'sale',
       newFurniture: true,
       favorite: true,
@@ -62,6 +63,7 @@ const initialState = {
       name: 'Aenean Ru Bristique 5',
       category: 'bed',
       price: 30,
+      oldPrice: '',
       stars: 2,
       promo: 'sale',
       newFurniture: true,
@@ -73,6 +75,7 @@ const initialState = {
       name: 'Aenean Ru Bristique 6',
       category: 'bed',
       price: 30,
+      oldPrice: '$40',
       stars: 2,
       promo: 'sale',
       newFurniture: true,
@@ -84,6 +87,7 @@ const initialState = {
       name: 'Aenean Ru Bristique 7',
       category: 'bed',
       price: 30,
+      oldPrice: '',
       stars: 2,
       promo: 'sale',
       newFurniture: true,
@@ -97,6 +101,7 @@ const initialState = {
       name: 'Aenean Ru Bristique 8',
       category: 'bed',
       price: 30,
+      oldPrice: '$65',
       stars: 2,
       promo: 'sale',
       newFurniture: true,
@@ -108,6 +113,7 @@ const initialState = {
       name: 'Aenean Ru Bristique 9',
       category: 'bed',
       price: 30,
+      oldPrice: '$50',
       stars: 2,
       promo: 'sale',
       newFurniture: true,
@@ -119,6 +125,7 @@ const initialState = {
       name: 'Aenean Ru Bristique 10',
       category: 'bed',
       price: 30,
+      oldPrice: '',
       stars: 2,
       promo: 'sale',
       newFurniture: true,
@@ -130,6 +137,7 @@ const initialState = {
       name: 'Aenean Ru Bristique 11',
       category: 'bed',
       price: 30,
+      oldPrice: '',
       stars: 2,
       promo: 'sale',
       newFurniture: true,
@@ -141,6 +149,7 @@ const initialState = {
       name: 'Aenean Ru Bristique 12',
       category: 'bed',
       price: 30,
+      oldPrice: '',
       stars: 2,
       promo: 'sale',
       newFurniture: true,
@@ -152,6 +161,7 @@ const initialState = {
       name: 'Aenean Ru Bristique 13',
       category: 'bed',
       price: 30,
+      oldPrice: '',
       stars: 2,
       promo: 'sale',
       newFurniture: true,
@@ -163,6 +173,7 @@ const initialState = {
       name: 'Aenean Ru Bristique 14',
       category: 'bed',
       price: 30,
+      oldPrice: '',
       stars: 2,
       promo: 'sale',
       newFurniture: true,
@@ -174,6 +185,7 @@ const initialState = {
       name: 'Aenean Ru Bristique 15',
       category: 'bed',
       price: 30,
+      oldPrice: '',
       stars: 2,
       promo: 'sale',
       newFurniture: true,
@@ -185,6 +197,7 @@ const initialState = {
       name: 'Aenean Ru Bristique 16',
       category: 'bed',
       price: 30,
+      oldPrice: '',
       stars: 2,
       promo: 'sale',
       newFurniture: true,
@@ -196,6 +209,7 @@ const initialState = {
       name: 'Aenean Ru Bristique 17',
       category: 'bed',
       price: 30,
+      oldPrice: '',
       stars: 2,
       promo: 'sale',
       newFurniture: true,
@@ -207,6 +221,7 @@ const initialState = {
       name: 'Aenean Ru Bristique 18',
       category: 'bed',
       price: 30,
+      oldPrice: '',
       stars: 2,
       promo: 'sale',
       newFurniture: true,
@@ -218,6 +233,7 @@ const initialState = {
       name: 'Aenean Ru Bristique 19',
       category: 'bed',
       price: 30,
+      oldPrice: '',
       stars: 2,
       promo: 'sale',
       newFurniture: true,
@@ -229,6 +245,7 @@ const initialState = {
       name: 'Aenean Ru Bristique 20',
       category: 'bed',
       price: 30,
+      oldPrice: '',
       stars: 2,
       promo: 'sale',
       newFurniture: true,
@@ -240,6 +257,7 @@ const initialState = {
       name: 'Aenean Ru Bristique 21',
       category: 'bed',
       price: 30,
+      oldPrice: '',
       stars: 2,
       promo: 'sale',
       newFurniture: true,
@@ -251,6 +269,7 @@ const initialState = {
       name: 'Aenean Ru Bristique 22',
       category: 'bed',
       price: 30,
+      oldPrice: '',
       stars: 2,
       promo: 'sale',
       newFurniture: true,
@@ -262,6 +281,7 @@ const initialState = {
       name: 'Aenean Ru Bristique 23',
       category: 'bed',
       price: 30,
+      oldPrice: '',
       stars: 2,
       promo: 'sale',
       newFurniture: true,
@@ -273,6 +293,7 @@ const initialState = {
       name: 'Aenean Ru Bristique 24',
       category: 'bed',
       price: 30,
+      oldPrice: '',
       stars: 2,
       promo: 'sale',
       newFurniture: true,
@@ -1336,9 +1357,42 @@ const initialState = {
         'https://images.pexels.com/photos/5778892/pexels-photo-5778892.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
     },
   ],
+  brands: [
+    {
+      id: '1',
+      logo:
+        'https://images.pexels.com/photos/430205/pexels-photo-430205.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    },
+    {
+      id: '2',
+      logo:
+        'https://images.pexels.com/photos/1337386/pexels-photo-1337386.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    },
+    {
+      id: '3',
+      logo:
+        'https://images.pexels.com/photos/1162361/pexels-photo-1162361.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    },
+    {
+      id: '4',
+      logo:
+        'https://images.pexels.com/photos/104372/pexels-photo-104372.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    },
+    {
+      id: '5',
+      logo:
+        'https://images.pexels.com/photos/2362155/pexels-photo-2362155.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    },
+    {
+      id: '6',
+      logo:
+        'https://images.pexels.com/photos/4389667/pexels-photo-4389667.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+    },
+  ],
   cart: {
     products: [],
   },
+
   promotions: [
     {
       id: 'promotion-1',
@@ -1367,6 +1421,120 @@ const initialState = {
       text: 'SPECIAL',
       text_2: 'COLLECTION',
       text_content: 'SAVE UP 45% OF FURNITURE ',
+    },
+  ],
+
+  promo_products: [
+    {
+      id: 'aenean-ru-bristique-1',
+      oldPrice: 123,
+      src:
+        'https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      alt: 'sofa',
+    },
+    {
+      id: 'aenean-ru-bristique-2',
+      oldPrice: 123,
+      src:
+        'https://images.pexels.com/photos/4505458/pexels-photo-4505458.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      alt: 'sofa',
+    },
+    {
+      id: 'aenean-ru-bristique-3',
+      oldPrice: 123,
+      src:
+        'https://images.pexels.com/photos/4577654/pexels-photo-4577654.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      alt: 'sofa',
+    },
+  ],
+
+  feedback: [
+    {
+      id: '1',
+      name: 'John Smith',
+      feedback:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam maximus massa luctus, interdum dui ac, consequat lorem. Quisque id quam rhoncus, venenatis urna ac, malesuada urna.',
+      img_src:
+        'https://images.pexels.com/photos/1586996/pexels-photo-1586996.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+    },
+    {
+      id: '2',
+      name: 'Mike Tyson',
+      feedback:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam maximus massa luctus, interdum dui ac, consequat lorem. Quisque id quam rhoncus, venenatis urna ac, malesuada urna.',
+      img_src:
+        'https://images.pexels.com/photos/3760809/pexels-photo-3760809.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+    },
+    {
+      id: '3',
+      name: 'George Furniture',
+      feedback:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam maximus massa luctus, interdum dui ac, consequat lorem. Quisque id quam rhoncus, venenatis urna ac, malesuada urna.',
+      img_src:
+        'https://images.pexels.com/photos/3760263/pexels-photo-3760263.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+    },
+  ],
+
+  gallery: [
+    {
+      id: '1',
+      name: 'Aenean Ru Bristique 1',
+      image:
+        'https://images.pexels.com/photos/276534/pexels-photo-276534.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
+      oldPrice: 160,
+      price: 120,
+      stars: 2,
+      active: true,
+    },
+    {
+      id: '2',
+      name: 'Aenean Ru Bristique 2',
+      image:
+        'https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
+      oldPrice: 130,
+      price: 110,
+      stars: 2,
+      active: false,
+    },
+    {
+      id: '3',
+      name: 'Aenean Ru Bristique 3',
+      image:
+        'https://images.pexels.com/photos/2547555/pexels-photo-2547555.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
+      oldPrice: 150,
+      price: 120,
+      stars: 2,
+      active: false,
+    },
+    {
+      id: '4',
+      name: 'Aenean Ru Bristique 4',
+      image:
+        'https://images.pexels.com/photos/6707628/pexels-photo-6707628.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
+      oldPrice: 190,
+      price: 150,
+      stars: 2,
+      active: false,
+    },
+    {
+      id: '5',
+      name: 'Aenean Ru Bristique 5',
+      image:
+        'https://images.pexels.com/photos/60342/pexels-photo-60342.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
+      oldPrice: 160,
+      price: 130,
+      stars: 2,
+      active: false,
+    },
+    {
+      id: '6',
+      name: 'Aenean Ru Bristique 6',
+      image:
+        'https://images.pexels.com/photos/6588591/pexels-photo-6588591.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
+      oldPrice: 140,
+      price: 110,
+      stars: 2,
+      active: false,
     },
   ],
 };

@@ -3,15 +3,13 @@ import PropTypes from 'prop-types';
 
 import styles from './ProductBox.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faStar,
-  faExchangeAlt,
-  faShoppingBasket,
-} from '@fortawesome/free-solid-svg-icons';
-import { faStar as farStar, faHeart } from '@fortawesome/free-regular-svg-icons';
+import { faExchangeAlt, faShoppingBasket } from '@fortawesome/free-solid-svg-icons';
+import { faHeart } from '@fortawesome/free-regular-svg-icons';
 import Button from '../Button/Button';
 
-const ProductBox = ({ name, price, promo, stars, image, compare, favorite }) => (
+import StarsRating from '../StarsRating/StarsRating';
+
+const ProductBox = ({ name, price, oldPrice, promo, stars, image, compare, favorite }) => (
   <div className={styles.root}>
     <div className={styles.photo}>
       {promo && <div className={styles.sale}>{promo}</div>}
@@ -26,15 +24,7 @@ const ProductBox = ({ name, price, promo, stars, image, compare, favorite }) => 
     <div className={styles.content}>
       <h5>{name}</h5>
       <div className={styles.stars}>
-        {[1, 2, 3, 4, 5].map(i => (
-          <a key={i} href='#'>
-            {i <= stars ? (
-              <FontAwesomeIcon icon={faStar}>{i} stars</FontAwesomeIcon>
-            ) : (
-              <FontAwesomeIcon icon={farStar}>{i} stars</FontAwesomeIcon>
-            )}
-          </a>
-        ))}
+        <StarsRating stars={stars} />
       </div>
     </div>
     <div className={styles.line}></div>
@@ -48,7 +38,8 @@ const ProductBox = ({ name, price, promo, stars, image, compare, favorite }) => 
         </Button>
       </div>
       <div className={styles.price}>
-        <Button noHover variant='small'>
+        <div className={styles.oldprice}>{oldPrice}</div>
+        <Button noHover variant='small' className={styles.priceButton}>
           $ {price}
         </Button>
       </div>
@@ -60,9 +51,10 @@ ProductBox.propTypes = {
   children: PropTypes.node,
   name: PropTypes.string,
   price: PropTypes.number,
+  oldPrice: PropTypes.number,
   promo: PropTypes.string,
   stars: PropTypes.number,
-  image: PropTypes.string.isRequired,
+  image: PropTypes.string,
   compare: PropTypes.bool,
   favorite: PropTypes.bool,
 };
