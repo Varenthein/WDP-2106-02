@@ -1,10 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import StickyBar from './StickyBar';
+import StarsRating from './StarsRating';
 
-describe('Component StickyBar', () => {
+describe('Component StarsRating', () => {
   it('should render without crashing', () => {
-    const component = shallow(<StickyBar />);
+    const component = shallow(<StarsRating />);
     expect(component).toBeTruthy();
   });
 });

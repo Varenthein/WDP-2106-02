@@ -1,5 +1,11 @@
 @import "../../../styles/settings.scss";
 
+@mixin small {
+  @media (max-width: 575px) {
+    @content;
+  }
+}
+
 .root {
   background-color: $topbar-bcg;
 
@@ -37,6 +43,12 @@
 
     .icon {
       margin-right: 5px;
+    }
+
+    @include small {
+      span {
+        display: none;
+      }
     }
   }
 }

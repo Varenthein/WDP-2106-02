@@ -1,0 +1,35 @@
+@import "../../../styles/settings.scss";
+
+$tooltip-bck: $almostBlack;
+$tooltip-arrow-bck: $almostBlack;
+
+.tooltipWrapper {
+  position: relative;
+  cursor: default;
+
+  .tooltip {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    margin-left: 20px;
+    background-color: $tooltip-bck;
+    color: $white;
+    font-size: 12px;
+    white-space: nowrap;
+    padding: 5px 10px;
+    opacity: 0;
+
+    .tooltipArrow {
+      height: 10px;
+      width: 10px;
+      position: absolute;
+      top: 35%;
+      left: 0;
+      background-color: $tooltip-arrow-bck;
+      transform: rotate(45deg);
+      margin-left: -5px;
+      
+    }
+  }
+}

@@ -5,11 +5,7 @@
 
 ## Opis projektu
 
-DO UZUPEŁNIENIA
-
-## Demo
-
-DO UZUPEŁNIENIA
+Projekt jest przykładową stroną sklepu zakodowaną z darmowego szablonu PSD, w celu nauki kodowania stron. Stworzony w oparciu o technologie: JavaScript, React, Redux, SASS.
 
 ## Inicjacja projektu
 
@@ -35,7 +31,3 @@ Projekt korzysta z Git Hooks - możliwości uruchamiania skryptów w reakcji na 
 
 Za każdym razem gdy wykonasz komendę `git commit` zostaną uruchomione testy jednostkowe, formatowanie oraz lintowanie
 dla plików, które zostały wybrane za pomocą `git add` i mają być zapisane w commicie.
-
-## Konwencje i dobre praktyki
-
-DO UZUPEŁNIENIA
