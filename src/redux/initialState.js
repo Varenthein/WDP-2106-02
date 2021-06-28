@@ -1393,6 +1393,37 @@ const initialState = {
     products: [],
   },
 
+  promotions: [
+    {
+      id: 'promotion-1',
+      image:
+        'https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
+      alt: 'promo-1',
+      text: 'GUEST ROOM',
+      text_bold: 'SOFA',
+      text_percent: '-20%',
+    },
+    {
+      id: 'promotion-2',
+      image:
+        'https://images.pexels.com/photos/205321/pexels-photo-205321.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      alt: 'promo-2',
+      text: 'OFFICE',
+      text_2: 'CHAIR',
+      text_bold: 'COLLECTION',
+      text_money: '$200.00',
+    },
+    {
+      id: 'promotion-3',
+      image:
+        'https://images.pexels.com/photos/6636243/pexels-photo-6636243.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      alt: 'promo-3',
+      text: 'SPECIAL',
+      text_2: 'COLLECTION',
+      text_content: 'SAVE UP 45% OF FURNITURE ',
+    },
+  ],
+
   promo_products: [
     {
       id: 'aenean-ru-bristique-1',
@@ -1443,6 +1474,7 @@ const initialState = {
         'https://images.pexels.com/photos/3760263/pexels-photo-3760263.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
     },
   ],
+
   gallery: [
     {
       id: '1',
