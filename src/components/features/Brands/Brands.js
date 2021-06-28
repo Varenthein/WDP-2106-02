@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import styles from './Brands.module.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 
 class Brands extends React.Component {
   state = {
@@ -22,33 +24,37 @@ class Brands extends React.Component {
     }
   }
   render() {
-    console.log(this.state.screenWidth);
     const { brands } = this.props;
     const { activePage } = this.state;
     const pagesCount = Math.ceil(brands.length / 6);
+
     return (
       <div className={styles.root}>
         <div className='container'>
-          <div className={styles.panelBar}>
-            <div className={styles.boxRow}>
-              <div
-                className={styles.arrow}
-                onClick={() => this.prevSlide(activePage - 1)}
-              >
-                &#60;
-              </div>
-              {brands.slice(activePage * 6, (activePage + 1) * 6).map(item => (
-                <div key={item.id} className=''>
-                  <div className={styles.logoBox}>
-                    <img src={item.logo} className={styles.logo} alt='logo' />
-                  </div>
+          <div className='row'>
+            <div className='col'>
+              <div className={'col ' + styles.content}>
+                <button
+                  type='button'
+                  className='btn rounded-0'
+                  onClick={() => this.prevSlide(activePage - 1)}
+                >
+                  <FontAwesomeIcon className={styles.icon} icon={faAngleLeft} />
+                </button>
+                <div className={styles.logoBoxes}>
+                  {brands.slice(activePage * 6, (activePage + 1) * 6).map(item => (
+                    <div key={item.id} className={styles.logoBox}>
+                      <img src={item.logo} alt='logo' />
+                    </div>
+                  ))}
                 </div>
-              ))}
-              <div
-                className={styles.arrow}
-                onClick={() => this.nextSlide(activePage + 1, pagesCount)}
-              >
-                &#62;
+                <button
+                  type='button'
+                  className='btn rounded-0'
+                  onClick={() => this.nextSlide(activePage + 1, pagesCount)}
+                >
+                  <FontAwesomeIcon className={styles.icon} icon={faAngleRight} />
+                </button>
               </div>
             </div>
           </div>
