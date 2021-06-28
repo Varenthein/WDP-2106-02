@@ -1361,32 +1361,62 @@ const initialState = {
     {
       id: '1',
       logo:
-        'https://images.pexels.com/photos/430205/pexels-photo-430205.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+        'https://images.pexels.com/photos/988952/pexels-photo-988952.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260',
     },
     {
       id: '2',
       logo:
-        'https://images.pexels.com/photos/1337386/pexels-photo-1337386.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+        'https://images.pexels.com/photos/1435750/pexels-photo-1435750.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
     },
     {
       id: '3',
       logo:
-        'https://images.pexels.com/photos/1162361/pexels-photo-1162361.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+        'https://images.pexels.com/photos/2921584/pexels-photo-2921584.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
     },
     {
       id: '4',
       logo:
-        'https://images.pexels.com/photos/104372/pexels-photo-104372.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+        'https://images.pexels.com/photos/4480519/pexels-photo-4480519.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
     },
     {
       id: '5',
       logo:
-        'https://images.pexels.com/photos/2362155/pexels-photo-2362155.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+        'https://images.pexels.com/photos/7719767/pexels-photo-7719767.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
     },
     {
       id: '6',
       logo:
-        'https://images.pexels.com/photos/4389667/pexels-photo-4389667.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+        'https://images.pexels.com/photos/1437318/pexels-photo-1437318.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+    },
+    {
+      id: '7',
+      logo:
+        'https://images.pexels.com/photos/755992/pexels-photo-755992.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
+    },
+    {
+      id: '8',
+      logo:
+        'https://images.pexels.com/photos/988953/pexels-photo-988953.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+    },
+    {
+      id: '9',
+      logo:
+        'https://images.pexels.com/photos/569996/pexels-photo-569996.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
+    },
+    {
+      id: '10',
+      logo:
+        'https://images.pexels.com/photos/258174/pexels-photo-258174.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+    },
+    {
+      id: '11',
+      logo:
+        'https://images.pexels.com/photos/2983100/pexels-photo-2983100.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+    },
+    {
+      id: '12',
+      logo:
+        'https://images.pexels.com/photos/7719767/pexels-photo-7719767.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260',
     },
   ],
   cart: {
