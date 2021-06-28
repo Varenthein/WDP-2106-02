@@ -34,12 +34,20 @@ class NewFurniture extends React.Component {
   }
 
   render() {
-    const { categories, products } = this.props;
+    const { categories, products, deviceType } = this.props;
     const { activeCategory, activePage, isFading } = this.state;
 
     const categoryProducts = products.filter(item => item.category === activeCategory);
-    const pagesCount = Math.ceil(categoryProducts.length / 8);
 
+    let itemsPerPage;
+    if (deviceType === 'mobile') {
+      itemsPerPage = 2;
+    } else if (deviceType === 'ipad') {
+      itemsPerPage = 3;
+    } else if (deviceType === 'desktop') {
+      itemsPerPage = 8;
+    }
+    const pagesCount = Math.ceil(categoryProducts.length / itemsPerPage);
     const dots = [];
     for (let i = 0; i < pagesCount; i++) {
       dots.push(
@@ -86,19 +94,16 @@ class NewFurniture extends React.Component {
                 </div>
               </div>
             </div>
-            <div
-              className={'row' + (isFading ? ' ' + styles.fadeout : ' ' + styles.fadein)}
-            >
-              {categoryProducts
-                .slice(activePage * 8, (activePage + 1) * 8)
-                .map(item => (
-                  <div key={item.id} className='col-6 col-md-4 col-lg-3'>
-                    <ProductBox
-                      {...item}
-                    />
-                  </div>
-                ))}
-            </div>
+          </div>
+
+          <div className={'row' + (isFading ? ' ' + styles.fadeout : ' ' + styles.fadein)}>
+            {categoryProducts
+              .slice(activePage * itemsPerPage, (activePage + 1) * itemsPerPage)
+              .map((item, i) => (
+                <div key={item.id} className='col-6 col-md-4 col-lg-3'>
+                  <ProductBox {...item} changeFavorite={this.props.setFav} />
+                </div>
+              ))}
           </div>
         </div>
       </SwipeComponent>
@@ -115,6 +120,7 @@ NewFurniture.propTypes = {
       name: PropTypes.string,
     })
   ),
+  deviceType: PropTypes.string,
   products: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string,
@@ -126,6 +132,7 @@ NewFurniture.propTypes = {
       newFurniture: PropTypes.bool,
     })
   ),
+  setFav: PropTypes.func,
 };
 
 NewFurniture.defaultProps = {

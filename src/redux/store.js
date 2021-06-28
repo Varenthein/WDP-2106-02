@@ -4,15 +4,21 @@ import initialState from './initialState';
 import cartReducer from './cartRedux';
 import categoriesReducer from './categoriesRedux';
 import productsReducer from './productsRedux';
+import deviceTypeReducer from './deviceRedux';
 import promo_productReducer from './promo_productRedux';
-
+import galleryReducer from './galleryRedux';
+import feedbackReducer from './feedbackRedux';
 import brandsReducer from './brandsRedux';
+
 // define reducers
 const reducers = {
   cart: cartReducer,
   categories: categoriesReducer,
   products: productsReducer,
+  deviceType: deviceTypeReducer,
   promo_products: promo_productReducer,
+  gallery: galleryReducer,
+  feedback: feedbackReducer,
   brands: brandsReducer,
 };
 
