@@ -33,37 +33,37 @@ const MenuBar = ({ children }) => {
               <div className={'collapse navbar-collapse ' + (isOpen ? 'show' : 'hide')}>
                 <ul className='navbar-nav'>
                   <li className='nav-item'>
-                    <a href='#' className={'nav-link ' + styles.active}>
+                    <a href='/' className={'nav-link ' + styles.active}>
                       Home
                     </a>
                   </li>
                   <li className='nav-item'>
-                    <a href='#' className='nav-link'>
+                    <a href='/shop/furniture' className='nav-link'>
                       Furniture
                     </a>
                   </li>
                   <li className='nav-item'>
-                    <a href='#' className='nav-link'>
+                    <a href='/shop/chair' className='nav-link'>
                       Chair
                     </a>
                   </li>
                   <li className='nav-item'>
-                    <a href='#' className='nav-link'>
+                    <a href='/shop/table' className='nav-link'>
                       Table
                     </a>
                   </li>
                   <li className='nav-item'>
-                    <a href='#' className='nav-link'>
+                    <a href='/shop/sofa' className='nav-link'>
                       Sofa
                     </a>
                   </li>
                   <li className='nav-item'>
-                    <a href='#' className='nav-link'>
+                    <a href='/shop/bedroom' className='nav-link'>
                       Bedroom
                     </a>
                   </li>
                   <li className='nav-item'>
-                    <a href='#' className='nav-link'>
+                    <a href='/shop/blog' className='nav-link'>
                       Blog
                     </a>
                   </li>

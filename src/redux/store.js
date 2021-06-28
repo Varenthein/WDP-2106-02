@@ -7,6 +7,7 @@ import productsReducer from './productsRedux';
 import deviceTypeReducer from './deviceRedux';
 import promo_productReducer from './promo_productRedux';
 import galleryReducer from './galleryRedux';
+import feedbackReducer from './feedbackRedux';
 import brandsReducer from './brandsRedux';
 
 // define reducers
@@ -17,6 +18,7 @@ const reducers = {
   deviceType: deviceTypeReducer,
   promo_products: promo_productReducer,
   gallery: galleryReducer,
+  feedback: feedbackReducer,
   brands: brandsReducer,
 };
 

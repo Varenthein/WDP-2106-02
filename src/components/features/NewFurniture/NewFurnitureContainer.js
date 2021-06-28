@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import NewFurniture from './NewFurniture';
 
 import { getAll } from '../../../redux/categoriesRedux.js';
-import { getNew } from '../../../redux/productsRedux.js';
+import { getNew, setFavorite } from '../../../redux/productsRedux.js';
 
 import { getDeviceType } from '../../../redux/deviceRedux.js';
 
@@ -12,5 +12,8 @@ const mapStateToProps = state => ({
   products: getNew(state),
   deviceType: getDeviceType(state),
 });
+const mapDispatchToProps = dispatch => ({
+  setFav: productId => dispatch(setFavorite(productId)),
+});
 
-export default connect(mapStateToProps)(NewFurniture);
+export default connect(mapStateToProps, mapDispatchToProps)(NewFurniture);
