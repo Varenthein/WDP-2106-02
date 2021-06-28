@@ -6,7 +6,7 @@ import categoriesReducer from './categoriesRedux';
 import productsReducer from './productsRedux';
 import deviceTypeReducer from './deviceRedux';
 import promo_productReducer from './promo_productRedux';
-
+import feedbackReducer from './feedbackRedux';
 import brandsReducer from './brandsRedux';
 // define reducers
 const reducers = {
@@ -15,6 +15,7 @@ const reducers = {
   products: productsReducer,
   deviceType: deviceTypeReducer,
   promo_products: promo_productReducer,
+  feedback: feedbackReducer,
   brands: brandsReducer,
 };
 

@@ -22,8 +22,8 @@ class Brands extends React.Component {
     }
   }
   render() {
-    console.log(this.state.screenWidth);
     const { brands } = this.props;
+    console.log(brands);
     const { activePage } = this.state;
     const pagesCount = Math.ceil(brands.length / 6);
     return (
