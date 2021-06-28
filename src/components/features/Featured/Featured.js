@@ -13,9 +13,12 @@ class Featured extends React.Component {
   handlePageChange(newPage) {
     this.setState({ activePage: newPage });
   }
-  handlePageBannerChange(newPage) {
-    this.setState({ activePageBanner: newPage });
-    
+  handlePageBannerChange(newPage, pagesCount) {
+    if (-1 < newPage && newPage < pagesCount) {
+      this.setState({ activePageBanner: newPage });
+    } else {
+      return false;
+    }
   }
   render() {
     const { promo_products } = this.props;
@@ -81,8 +84,8 @@ class Featured extends React.Component {
                 ))}
               </SwipeComponent>
               <div className={styles.imgButtons}>
-                <div className={styles.buttonPrev} onClick={()=>this.handlePageBannerChange(activePageBanner - 1)}>&#60;</div>
-                <div className={styles.buttonNext} onClick={()=>this.handlePageBannerChange(activePageBanner + 1)}>&#62;</div>
+                <div className={styles.buttonPrev} onClick={()=>this.handlePageBannerChange(activePageBanner - 1, pagesCount)}>&#60;</div>
+                <div className={styles.buttonNext} onClick={()=>this.handlePageBannerChange(activePageBanner + 1, pagesCount)}>&#62;</div>
               </div>
             </div>
           </div>
