@@ -13,14 +13,25 @@ const reducerName = 'products';
 const createActionName = name => `app/${reducerName}/${name}`;
 
 /* action types */
+const SET_FAV = createActionName('SET_FAV');
 export const CHANGE_COMPARE = createActionName('CHANGE_COMPARE');
 
 /* action creators */
+export const setFavorite = payload => ({ payload, type: SET_FAV });
 export const changeCompare = payload => ({ payload, type: CHANGE_COMPARE });
 
 /* reducer */
-export default function reducer(statePart = [], action = {}) {
+export default function reducer(statePart = [], action = []) {
   switch (action.type) {
+    case SET_FAV: {
+      let products = statePart.map(item => {
+        if (item.id === action.payload) {
+          item.favorite = !item.favorite;
+        }
+        return item;
+      });
+      return [...statePart, products];
+    }
     case CHANGE_COMPARE: {
       return statePart.map(product =>
         product.id === action.payload
