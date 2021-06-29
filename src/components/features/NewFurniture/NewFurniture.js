@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import styles from './NewFurniture.module.scss';
-import ProductBox from '../../common/ProductBox/ProductBox';
+import ProductBox from '../../common/ProductBox/ProductBoxContainer';
 
 import SwipeComponent from '../../common/Swipeable/SwipeComponent';
 
@@ -94,16 +94,15 @@ class NewFurniture extends React.Component {
                 </div>
               </div>
             </div>
-          </div>
-
-          <div className={'row' + (isFading ? ' ' + styles.fadeout : ' ' + styles.fadein)}>
-            {categoryProducts
-              .slice(activePage * itemsPerPage, (activePage + 1) * itemsPerPage)
-              .map((item, i) => (
-                <div key={item.id} className='col-6 col-md-4 col-lg-3'>
-                  <ProductBox {...item} changeFavorite={this.props.setFav} />
-                </div>
-              ))}
+            <div className={'row' + (isFading ? ' ' + styles.fadeout : ' ' + styles.fadein)}>
+              {categoryProducts
+                .slice(activePage * itemsPerPage, (activePage + 1) * itemsPerPage)
+                .map((item, i) => (
+                  <div key={item.id} className='col-6 col-md-4 col-lg-3'>
+                    <ProductBox {...item} changeFavorite={this.props.setFav} />
+                  </div>
+                ))}
+            </div>
           </div>
         </div>
       </SwipeComponent>

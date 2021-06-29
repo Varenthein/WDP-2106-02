@@ -28,9 +28,13 @@
       border-radius: 50%;
       color: $productbox-sale-text;
       padding: 30px 15px 5px 15px;
+      z-index: 1;
     }
 
     .image {
+      position: absolute;
+      top: 0;
+      left: 0;
       object-fit: cover;
       width: 100%;
       height: 100%;
@@ -41,6 +45,7 @@
       justify-content: space-between;
       opacity: 0;
       transition: $transition-button-bg;
+      position: relative;
     }
   }
 

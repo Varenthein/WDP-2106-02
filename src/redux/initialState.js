@@ -16,9 +16,9 @@ const initialState = {
       oldPrice: '40',
       stars: 3,
       promo: 'sale',
+      compare: false,
       newFurniture: true,
       favorite: false,
-      compare: true,
       image:
         'https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
     },
@@ -30,9 +30,9 @@ const initialState = {
       oldPrice: '',
       stars: 3,
       promo: 'sale',
+      compare: false,
       newFurniture: true,
       favorite: true,
-      compare: false,
       image:
         'https://images.pexels.com/photos/279746/pexels-photo-279746.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
     },
@@ -43,6 +43,7 @@ const initialState = {
       price: 30,
       stars: 1,
       promo: 'sale',
+      compare: false,
       newFurniture: true,
       image:
         'https://images.pexels.com/photos/1329711/pexels-photo-1329711.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
@@ -55,9 +56,9 @@ const initialState = {
       oldPrice: '35',
       stars: 3,
       promo: 'sale',
+      compare: false,
       newFurniture: true,
       favorite: true,
-      compare: true,
       image:
         'https://images.pexels.com/photos/6782567/pexels-photo-6782567.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
       featured: true,
@@ -70,6 +71,7 @@ const initialState = {
       oldPrice: '45',
       stars: 4,
       promo: 'sale',
+      compare: false,
       newFurniture: true,
       image:
         'https://images.pexels.com/photos/6758350/pexels-photo-6758350.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
@@ -83,6 +85,7 @@ const initialState = {
       oldPrice: '40',
       stars: 2,
       promo: 'sale',
+      compare: false,
       newFurniture: true,
       image:
         'https://images.pexels.com/photos/6782577/pexels-photo-6782577.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
@@ -95,9 +98,9 @@ const initialState = {
       oldPrice: '',
       stars: 2,
       promo: 'sale',
+      compare: false,
       newFurniture: true,
       favorite: true,
-      compare: true,
       image:
         'https://images.pexels.com/photos/6782468/pexels-photo-6782468.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
     },
@@ -109,6 +112,7 @@ const initialState = {
       oldPrice: '65',
       stars: 4,
       promo: 'sale',
+      compare: false,
       newFurniture: true,
       image:
         'https://images.pexels.com/photos/6758398/pexels-photo-6758398.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
@@ -122,6 +126,7 @@ const initialState = {
       oldPrice: '50',
       stars: 4,
       promo: 'sale',
+      compare: false,
       newFurniture: true,
       image:
         'https://images.pexels.com/photos/6782473/pexels-photo-6782473.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
@@ -134,6 +139,7 @@ const initialState = {
       oldPrice: '',
       stars: 3,
       promo: 'sale',
+      compare: false,
       newFurniture: true,
       image:
         'https://images.pexels.com/photos/6758769/pexels-photo-6758769.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
@@ -147,6 +153,7 @@ const initialState = {
       oldPrice: '',
       stars: 2,
       promo: 'sale',
+      compare: false,
       newFurniture: true,
       image:
         'https://images.pexels.com/photos/6782472/pexels-photo-6782472.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
@@ -159,6 +166,7 @@ const initialState = {
       oldPrice: '90',
       stars: 3,
       promo: 'sale',
+      compare: false,
       newFurniture: true,
       image:
         'https://images.pexels.com/photos/6758519/pexels-photo-6758519.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
@@ -171,6 +179,7 @@ const initialState = {
       oldPrice: '35',
       stars: 5,
       promo: 'sale',
+      compare: false,
       newFurniture: true,
       image:
         'https://images.pexels.com/photos/210604/pexels-photo-210604.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
@@ -183,6 +192,7 @@ const initialState = {
       oldPrice: '55',
       stars: 3,
       promo: 'sale',
+      compare: false,
       newFurniture: true,
       image:
         'https://images.pexels.com/photos/3946657/pexels-photo-3946657.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
@@ -195,6 +205,7 @@ const initialState = {
       oldPrice: '',
       stars: 3,
       promo: 'sale',
+      compare: false,
       newFurniture: true,
       image:
         'https://images.pexels.com/photos/4713245/pexels-photo-4713245.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
@@ -207,6 +218,7 @@ const initialState = {
       price: 30,
       stars: 3,
       promo: 'sale',
+      compare: false,
       newFurniture: true,
       image:
         'https://images.pexels.com/photos/6585740/pexels-photo-6585740.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
@@ -218,6 +230,7 @@ const initialState = {
       price: 30,
       stars: 3,
       promo: 'sale',
+      compare: false,
       newFurniture: true,
       image:
         'https://images.pexels.com/photos/6587906/pexels-photo-6587906.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
@@ -230,6 +243,7 @@ const initialState = {
       oldPrice: '45',
       stars: 3,
       promo: 'sale',
+      compare: false,
       newFurniture: true,
       image:
         'https://images.pexels.com/photos/6316054/pexels-photo-6316054.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
@@ -242,6 +256,7 @@ const initialState = {
       oldPrice: '35',
       stars: 4,
       promo: 'sale',
+      compare: false,
       newFurniture: true,
       image:
         'https://images.pexels.com/photos/6316054/pexels-photo-6316054.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
@@ -253,6 +268,7 @@ const initialState = {
       price: 30,
       stars: 2,
       promo: 'sale',
+      compare: false,
       newFurniture: true,
       image:
         'https://images.pexels.com/photos/6585759/pexels-photo-6585759.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
@@ -265,6 +281,7 @@ const initialState = {
       oldPrice: '60',
       stars: 4,
       promo: 'sale',
+      compare: false,
       newFurniture: true,
       image:
         'https://images.pexels.com/photos/6492400/pexels-photo-6492400.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
@@ -278,6 +295,7 @@ const initialState = {
       oldPrice: '35',
       stars: 3,
       promo: 'sale',
+      compare: false,
       newFurniture: true,
       image:
         'https://images.pexels.com/photos/6585619/pexels-photo-6585619.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
@@ -290,6 +308,7 @@ const initialState = {
       oldPrice: '40',
       stars: 2,
       promo: 'sale',
+      compare: false,
       newFurniture: true,
       image:
         'https://images.pexels.com/photos/6444258/pexels-photo-6444258.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
@@ -302,6 +321,7 @@ const initialState = {
       oldPrice: '55',
       stars: 3,
       promo: 'sale',
+      compare: false,
       newFurniture: true,
       image:
         'https://images.pexels.com/photos/2029722/pexels-photo-2029722.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
@@ -1530,6 +1550,7 @@ const initialState = {
       src:
         'https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
       alt: 'sofa',
+      description: 'save up to 50% of all furniture',
     },
     {
       id: 'aenean-ru-bristique-2',
@@ -1537,6 +1558,7 @@ const initialState = {
       src:
         'https://images.pexels.com/photos/4505458/pexels-photo-4505458.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
       alt: 'sofa',
+      description: 'save up to 10%',
     },
     {
       id: 'aenean-ru-bristique-3',
@@ -1544,6 +1566,7 @@ const initialState = {
       src:
         'https://images.pexels.com/photos/4577654/pexels-photo-4577654.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
       alt: 'sofa',
+      description: 'buy one get one free',
     },
   ],
 

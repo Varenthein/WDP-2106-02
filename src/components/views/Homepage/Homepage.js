@@ -12,6 +12,7 @@ import Gallery from '../../features/Gallery/GalleryContainer';
 import Featured from '../../features/Featured/FeaturedContainer';
 import Brands from '../../features/Brands/BrandsContainer';
 import ClientFeedback from '../../features/ClientFeedback/ClientFeedbackContainer';
+import StickyBar from '../../features/StickyBar/StickyBarContainer';
 
 const Homepage = () => (
   <div className={styles.root}>
@@ -22,6 +23,7 @@ const Homepage = () => (
     <Gallery />
     <ClientFeedback />
     <Brands />
+    <StickyBar />
   </div>
 );
 
