@@ -19,6 +19,7 @@ $whippedCream: #e2e2e2;
 $stone: #434343;
 $black: #0000;
 $header: #662727;
+$grey: #808080;
 
 /******** LIST OF COLOURS BY COMPONENT ********/
 //other files are usable
@@ -133,6 +134,29 @@ $topbar-link: $white;
 $topbar-link-hover: $orange;
 
 $form-border-color: $charcoal;
+
+/* Gallery Component */
+$gallery-heading-text: $orange;
+$gallery-heading-border: $whippedCream;
+$gallery-heading-before: $orange;
+$gallery-border-color: $whippedCream;
+$gallery-tabs-text: $almostBlack;
+$gallery-tabs-hover-active-bcg: $whippedCream;
+$gallery-tabs-hover-active-text: $orange;
+$gallery-tabs-active-border: $orange;
+$gallery-details-shadow: $grey;
+$gallery-details-corner: $almostBlack;
+$gallery-details-bcg: $white;
+$gallery-details-prices-bck: $stone;
+$gallery-details-stars: $almostBlack;
+$gallery-slider-button: $white;
+$gallery-slider-button-bck: $almostBlack;
+$gallery-slider-overlay: $grey;
+$gallery-border: 1px solid $gallery-border-color;
+
+$staticAd-heading1-text: $green;
+$staticAd-heading2-text: $orange;
+$staticAd-button-bck: $green;
 
 // TRANSITIONS //
 
