@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import styles from './ClientFeedback.module.scss';
+import SwipeComponent from '../../common/Swipeable/SwipeComponent';
 
 class ClientFeedback extends React.Component {
   state = {
@@ -19,10 +20,8 @@ class ClientFeedback extends React.Component {
   render() {
     const { feedback } = this.props;
     const { activeCategory, activePage } = this.state;
-
     const clientFeedback = feedback.filter(item => item.category === activeCategory);
     const pagesCount = Math.ceil(clientFeedback.length);
-
     const dots = [];
     for (let i = 0; i < pagesCount; i++) {
       dots.push(
@@ -55,18 +54,24 @@ class ClientFeedback extends React.Component {
           <div className='row'>
             <div className={styles.comma}>
               <h4>,,</h4>
-              {clientFeedback.slice(activePage, activePage + 1).map(item => (
-                <div key={item.id} className={styles.feedback_content_box}>
-                  <p className={styles.feedbackText}>{item.feedback}</p>
-                  <div className={styles.userContainer}>
-                    <img src={item.img_src} alt={'Img'} className={styles.userImg} />
-                    <div className={styles.userContainerData}>
-                      <div>{item.name}</div>
-                      <div>Furniture Client</div>
+              <SwipeComponent
+                itemsCount={pagesCount}
+                activeItem={this.state.activePage}
+                swipeAction={this.handlePageChange.bind(this)}
+              >
+                {clientFeedback.slice(activePage, activePage + 1).map(item => (
+                  <div key={item.id} className={styles.feedback_content_box}>
+                    <p className={styles.feedbackText}>{item.feedback}</p>
+                    <div className={styles.userContainer}>
+                      <img src={item.img_src} alt={'Img'} className={styles.userImg} />
+                      <div className={styles.userContainerData}>
+                        <div>{item.name}</div>
+                        <div>Furniture Client</div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </SwipeComponent>
             </div>
           </div>
         </div>

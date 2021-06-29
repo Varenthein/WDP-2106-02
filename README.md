@@ -31,3 +31,15 @@ Projekt korzysta z Git Hooks - możliwości uruchamiania skryptów w reakcji na 
 
 Za każdym razem gdy wykonasz komendę `git commit` zostaną uruchomione testy jednostkowe, formatowanie oraz lintowanie
 dla plików, które zostały wybrane za pomocą `git add` i mają być zapisane w commicie.
+
+## Konwencje i dobre praktyki
+
+- Foldery i pliki grupowane są wg funkcjonalności (3 gówne foldery: components, redux i styles);
+- Struktura pliku components dodatkowo pogrupowana jest wg funkcji danego elementu;
+- Zawartość folderu to pliki .js, .module.scss, .test.js, wraz z przedrostkiem NazwaKomponentu;
+- Nazewnictwo w pliku components zgodnie z notacją PascalCase;
+- Nazewnictwo w pliku redux zgodnie z notacją cascalCase;
+- Nazewnictwo klas wg konwencji OOCSS;
+- Style globalne umieszczone są w katalogu styles, style dla poszczególnych komponentów wraz z nimi w plikach komponentu;
+- Commity pisane są w języku angielskim, jako krótka informacja o konkretnej zmianie (np. Add styles to komponent (…));
+- Projekt utrzymany w zgodzie z zasadami KISS i DRY.

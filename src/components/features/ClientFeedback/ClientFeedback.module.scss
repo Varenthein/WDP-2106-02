@@ -13,7 +13,7 @@
       position: relative;
 
       h3 {
-        color: $primary;
+        color: $orange;
         text-transform: uppercase;
         font-size: 20px;
         line-height: 38px;
@@ -27,7 +27,7 @@
         bottom: -4px;
         left: 0;
         width: 45px;
-        border-bottom: 4px solid $primary;
+        border-bottom: 4px solid $orange;
       }
     }
     
@@ -57,7 +57,7 @@
                 bottom: -4px;
                 left: 0;
                 width: 100%;
-                border-bottom: 4px solid $primary;
+                border-bottom: 4px solid $orange;
               }
             }
           }
@@ -91,7 +91,7 @@
 
             &.active,
             &:hover {
-              background-color: $primary;
+              background-color: $orange;
             }
           }
         }
