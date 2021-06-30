@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable react-hooks/rules-of-hooks */
+import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -15,6 +17,23 @@ import Button from '../../common/Button/Button';
 import Tooltip from '../../common/Tooltip/Tooltip';
 import SwipeComponent from '../../common/Swipeable/SwipeComponent';
 
+const getContainerWith = (targetRef) => {
+  const getWidth = () => targetRef.current.offsetWidth;
+  const [width, setWidth] = useState(0);
+  const handleResize = () => setWidth(getWidth());
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  useLayoutEffect(() => {
+    handleResize();
+  }, []);
+
+  return width;
+};
+
 const Gallery = ({ getFeatured, getTopSeller, getSaleOff, getTopRated }) => {
   const galleryTabs = [
     { id: 'featured', name: 'Featured', products: getFeatured },
@@ -29,7 +48,21 @@ const Gallery = ({ getFeatured, getTopSeller, getSaleOff, getTopRated }) => {
   const [isFading, setFading] = useState(false);
   const [activePage, setActivePage] = useState(0);
 
-  const pagesCount = Math.ceil(activeTab.products.length / 6);
+  // RWD
+  const slidesContainerRef = useRef();
+  const slidesContainerWidth = getContainerWith(slidesContainerRef);
+
+  let slidesAmount;
+  if(slidesContainerWidth < 270) {
+    slidesAmount = 3;
+  } else if(slidesContainerWidth < 320) {
+    slidesAmount = 4;
+  } else if(slidesContainerWidth < 380) {
+    slidesAmount = 5;
+  } else slidesAmount = 6;
+
+  // actions
+  const pagesCount = Math.ceil(activeTab.products.length / slidesAmount);
   
   const handleTabChange = (newIndex) => {
     setFading(true);
@@ -82,7 +115,7 @@ const Gallery = ({ getFeatured, getTopSeller, getSaleOff, getTopRated }) => {
       <div className={styles.root}>
         <div className='container'>
           <div className='row'>
-            <div className={'col-12 col-md-6 ' + styles.galleryBox}>
+            <div className={'col-12 col-lg-6 ' + styles.galleryBox}>
               <div className={'col-12 col-md-auto ' + styles.heading}>
                 <h3>Furniture gallery</h3>
               </div>
@@ -176,9 +209,9 @@ const Gallery = ({ getFeatured, getTopSeller, getSaleOff, getTopRated }) => {
                   >
                     <FontAwesomeIcon className={styles.icon} icon={faAngleLeft} />
                   </button>
-                  <div className={'col ' + styles.slides}>
+                  <div ref={slidesContainerRef} className={'col ' + styles.slides}>
                     {activeTab.products
-                      .slice(activePage * 6, (activePage + 1) * 6)
+                      .slice(activePage * slidesAmount, (activePage + 1) * slidesAmount)
                       .map(product => (
                         <div
                           key={product.id}
@@ -199,7 +232,7 @@ const Gallery = ({ getFeatured, getTopSeller, getSaleOff, getTopRated }) => {
                 </div>
               </div>
             </div>
-            <div className={'col-12 col-md-6 ' + styles.staticAd}>
+            <div className={'col col-lg-6 ' + styles.staticAd}>
               <div className={styles.wrapper}>
                 <div className={styles.adImage}>
                   <img
