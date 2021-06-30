@@ -9,8 +9,8 @@ class Promotions extends React.Component {
     return (
       <div className={styles.root}>
         <div className='container'>
-          <div className='row'>
-            <div className='col'>
+          <div className='row ml-sm-0 mr-sm-0'>
+            <div className='col-sm-12 col-md-6'>
               <div className={styles.bigLeft}>
                 <img
                   className={styles.image}
@@ -25,9 +25,9 @@ class Promotions extends React.Component {
                 </div>
               </div>
             </div>
-            <div className='col-6'>
-              <div className='row'>
-                <div className='col-12'>
+            <div className='col-sm-12 col-md-6'>
+              <div className='row ml-sm-0 mr-sm-0'>
+                <div className={'col-md-12 col-sm-6 ' + styles.box1}>
                   <div className={styles.smallRightUp}>
                     <img
                       className={styles.image}
@@ -40,7 +40,7 @@ class Promotions extends React.Component {
                     <h3 className={styles.money}>{promotions[1].text_money}</h3>
                   </div>
                 </div>
-                <div className='col-12'>
+                <div className={'col-sm-6 col-md-12 ' + styles.box2}>
                   <div className={styles.smallRightDown}>
                     <img
                       className={styles.image}
